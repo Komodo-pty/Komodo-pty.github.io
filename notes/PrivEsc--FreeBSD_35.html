@@ -1,0 +1,12 @@
+<!doctype html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>FreeBSD</title>
+  <meta name="generator" content="CherryTree">
+  <link rel="stylesheet" href="res/styles4.css" type="text/css" />
+</head>
+<body>
+<div class='page'><h1 class='title'>FreeBSD</h1><br/><p><h1>Background</h1></p><p>Very similar to Linux &amp; Unix, but technically is its own FOSS branch of Unix.</p><p>Some Linux commands may not work on BSD, &amp; it may have its own alternatives instead. Even if the same command works on BSD (e.g <em>netstat</em>), it could take diff args!</p><p></p><p><h2>doas</h2></p><p>[CTF B 17]</p><p>By def, BSD uses <em><a href="https://exploit-notes.hdks.org/exploit/linux/privilege-escalation/doas/">doas</a></em> instead of <em>sudo</em></p><p><strong>/usr/local/etc/doas.conf</strong></p><p></p><p>Instead of <em>sudo -l</em>, use <em>cat </em><em><strong>/usr/local/etc/doas.conf</strong></em></p><p></p><p><h3>Syntax</h3></p><p><strong>permit nopass andrew as root cmd service args apache24 onestart</strong></p><p></p><p>Means andrew can execute the command “service apache24 onestart&quot; as root, w/o a password like-</p><p></p><p><em>doas service apache24 onestart</em></p><p></p><p><h2>Directory Structure</h2><span style="color:#663e0e;"></span></p><p><span style="color:#663e0e;"></span>Some files are stored in diff locations than Linux by def, &amp;/or some conf files have diff names.</p><p></p><p><h3>Home Directories</h3></p><p>Standard users are located within<strong> /usr/home/</strong> or <strong>/usr/guest</strong></p><p></p><p><h1>Linpeas</h1></p><p>Works on BSD, MacOS, etc.</p><p></p><p><h1>Listening Ports</h1></p><p><em>sockstat -l</em></p><p></p><p><h1>Mail</h1></p><p>(At least on some Unix Systems) Running <strong>mail</strong> can open prompt to view mail not shown by listing file contents normally.</p></div>
+</body>
+</html>

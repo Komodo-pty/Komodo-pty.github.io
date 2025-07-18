@@ -1,0 +1,12 @@
+<!doctype html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>MongoDB</title>
+  <meta name="generator" content="CherryTree">
+  <link rel="stylesheet" href="res/styles4.css" type="text/css" />
+</head>
+<body>
+<div class='page'><h1 class='title'>MongoDB</h1><br/><p><h1>Background</h1></p><p>Default port is <strong>27017-27020</strong> (depending on what <a href="https://www.mongodb.com/docs/manual/reference/default-mongodb-port/">server options</a> are used)</p><p></p><p><h2>Resources</h2></p><p><a href="https://book.hacktricks.xyz/network-services-pentesting/27017-27018-mongodb">Hacktricks</a></p><p></p><p><h1>Connecting</h1></p><p><h2>Anonymous Connection</h2></p><p>Try running the command without any args to see if it allows Anonymous Connections without any credentials specified.</p><p></p><p><em>mongo</em></p><p></p><p><h1>Enumeration</h1></p><p>Once connected using the <strong>mongo</strong> client, enumerate <strong>dbs</strong> (Databases), the <strong>collections</strong> within each dbs (They&#39;re like Tables), and the contents of each Collection.</p><p></p><p><h2>dbs</h2></p><p>Even if they appear empty, a dbs could still contain data!</p><p></p><p><em>show dbs</em></p><p></p><p><strong>admin 0.000 GB</strong></p><p><strong>backup 0.000 GB</strong></p><p><strong>config 0.000 GB</strong></p><p><strong>local 0.000 GB</strong></p><p></p><p><h2>Collections</h2></p><p>Like with SQL, you first need to connect to a Database.</p><p></p><p><em>use backup</em><em></em></p><p><em></em><em></em></p><p><em>show collections</em></p><p></p><p><strong>user</strong><strong></strong></p><p><strong>info</strong></p><p></p><p><h3>Dump Collection&#39;s Data</h3></p><p>Run the following while still connected to the target Database. For example, to dump the collection &quot;user&quot;.</p><p></p><p><em>db.user.find()</em></p></div>
+</body>
+</html>

@@ -1,0 +1,12 @@
+<!doctype html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>MS-RPC</title>
+  <meta name="generator" content="CherryTree">
+  <link rel="stylesheet" href="res/styles4.css" type="text/css" />
+</head>
+<body>
+<div class='page'><h1 class='title'>MS-RPC</h1><br/><p>[Win 37 (Bkgrnd), 43 (Enum methods), 48-49 (RPC uses)]</p><p></p><p><h1>Enum RPC</h1></p><p>[Win 43]</p><p>3 tools/methods which can yield diff results, so try each.</p><p></p><p><h2>impacket-rpcdump</h2><h2></h2></p><p><h2></h2>Simplest usage is just just specifying target as the only arg. Optionally can take normal impacket args for domain, auth, etc.</p><p></p><p><h3>Test for PrintNightmare</h3></p><p>[Win 48-49, 52]</p><p>Doesn&#39;t guarantee vuln, but if 1 or both of these are detected, can then try to fill the corresponding requirements for <a href="PrivEsc--Windows_9.html#PrintNightmare">PrintNightmare</a>.</p><p></p><p><em>impacket-rpcdump IP | grep -E &quot;MS-PAR|MS-RPRN&quot;</em></p><p><h2></h2></p><p><h2>impacket-rpcmap</h2><h2></h2></p><p><h2></h2><h2></h2></p><p><h2></h2><h2></h2></p><p><h2>nmap NSE</h2></p></div>
+</body>
+</html>

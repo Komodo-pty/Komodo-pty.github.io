@@ -1,0 +1,12 @@
+<!doctype html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>SweetRice</title>
+  <meta name="generator" content="CherryTree">
+  <link rel="stylesheet" href="res/styles4.css" type="text/css" />
+</head>
+<body>
+<div class='page'><h1 class='title'>SweetRice</h1><br/><p><h1>Background</h1></p><p>Default credentials are <strong>manager</strong>:<strong>Password123</strong>.</p><p></p><p>SweetRice is a CMS written in PHP. It supports multiple databases, including PostgreSQL, MySQL, and SQLite. Many vulnerabilities in earilier versions.</p><p></p><p>You seem to interact with the site&#39;s main functionality by using parameters specified in the <strong>as/</strong> subdirectory.</p><p></p><p><h2>Login</h2></p><p>In my case, the website didn&#39;t have obvious links to things like login pages. IDK if this is normal for SweetRice or was just how that site was setup.</p><p></p><p>I found a normal login page at <strong>as/?type=media_center</strong></p><p></p><p>You should also be able to authenticate by sending a POST with JSON body data to <strong>as/?type=signin</strong> (useful for automation)</p><p></p><p><strong>{</strong><strong></strong></p><p><strong>    &#39;user&#39;:username,</strong><strong></strong></p><p><strong>    &#39;passwd&#39;:password,</strong><strong></strong></p><p><strong>    &#39;rememberMe&#39;:&#39;&#39;</strong><strong></strong></p><p><strong>}</strong><strong></strong></p><p><strong></strong></p><p><h1>Authenticated RCE</h1></p><p>There are multiple ways to upload a file if you have Admin access. Manually leveraging the <a href="https://www.exploit-db.com/exploits/40700">Ad</a> method worked for me, but the <a href="https://www.exploit-db.com/exploits/40716">Media</a> method didn&#39;t.</p><p></p><p><h2>Ad</h2></p><p>Navigate to <strong>as/?type=ad</strong> </p><p></p><p>Enter a PHP Reverse Shell for the body content. For example, if you title it &quot;evil&quot; the file will be named evil<strong>.php</strong>.</p><p></p><p>Trigger it by navigating to <strong>inc/ads/evil.php</strong></p><p></p><p><h2>Media</h2></p></div>
+</body>
+</html>

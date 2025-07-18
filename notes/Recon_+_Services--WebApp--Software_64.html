@@ -1,0 +1,12 @@
+<!doctype html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>Software</title>
+  <meta name="generator" content="CherryTree">
+  <link rel="stylesheet" href="res/styles4.css" type="text/css" />
+</head>
+<body>
+<div class='page'><h1 class='title'>Software</h1><br/><p>Servers &amp; Content Management Systems (CMS)</p><p></p><p><a name="Boundary (multipart) Data"></a><h1>Boundary (multipart) Data</h1></p><p>[CTF B 190-191]</p><p></p><p>One method for processing data in a POST Request is to use an HTTP Header that specifes <strong>multipart</strong> data.</p><p></p><p><strong>Content-Type: multipart/form-data; boundary=--STRING</strong></p><p></p><p>The string can be any sequence of any ASCII printable characters, but no spaces or special characters.  The string needs to start with at least 2 dashes <strong>--</strong>.</p><p></p><p><h2>Closing the Body</h2></p><p>The end of the Request&#39;s body data will contain the boundary with 2 dashes (<strong>--</strong>) appended to it.</p><p></p><p><h2>Boundary Use Case</h2></p><p>The boundary acts as a delimiter, marking the start &amp; end of each part of the Request body when sending <strong>multipart</strong> data.</p><p></p><p>Each part of the body represents a different piece of data (e.g. from a file upload or form fields). The boundary seperates each of these parts so that the server can correctly parse the individual data elements.</p><p></p><p><h2>Identifying Uploaded File Type</h2></p><p>When <strong>multipart</strong> data is used for file uploads, there will be the normal HTTP Header which specifies the boundary (shown aboce), but there will also be ANOTHER <strong>Content-Type</strong> contained within a field of the body data.</p><p></p><p><span style="color:#060f94;text-decoration:underline;">Note</span>: The piece of body data that identifies the file type (MIME Type) can sometimes be <a href="Recon_+_Services--WebApp--Attack_Vectors_65.html#file type spoofing">spoofed</a> to bypass filters without breaking your payload.</p><p></p><p><h1>Tools</h1></p><p><h2>FFuF</h2></p><p><h3>Loading wordlist from RAM</h3></p><p></p><p><em>curl http://adana.thm/announcements/wordlist.txt | ffuf -c -u &quot;http://adana.thm&quot; -w - -H &quot;Host: FUZZ.adana.thm&quot; -fw 459,205</em></p></div>
+</body>
+</html>
