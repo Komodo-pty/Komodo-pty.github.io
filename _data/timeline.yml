@@ -17,15 +17,12 @@
 #     - tag: Rails
 #   timeline-side: right
 
-- title: airbnb
-  title-url: https://example.com/
-  date: Sep 2019 - Present
-  subtitle: Fullstack Developer
+- title: Freelance Pentesting
+  title-url: /assets/redacted_Pentest_Report.pdf
+#  date: Sep 2019 - Present
+  subtitle: I performed penetration testing for an independent law firm, identifying vulnerabilities and recommending mitigation strategies. A redacted report and letter of recommendation is available upon request. 
   tags:
-    - tag: React
-    - tag: Javascript
-    - tag: Ruby
-    - tag: Rails
+
   timeline-side: right
 
 - title: Google
