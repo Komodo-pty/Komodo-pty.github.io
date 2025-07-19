@@ -1,2 +1,4 @@
-theme: jekyll-theme-time-machine
+remote_theme: longpdo/neumorphism@master
+plugins:
+  - jekyll-remote-theme
 title: Nathan Miller Penetration Tester
