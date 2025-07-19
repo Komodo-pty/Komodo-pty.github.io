@@ -1,4 +1,7 @@
-remote_theme: longpdo/neumorphism@master
+remote_theme: Komodo-pty/neumorphism@master
 plugins:
   - jekyll-remote-theme
 title: Nathan Miller Penetration Tester
+username: Nathan Miller
+typing_text: Penetration Tester
+email: miller.infosec@gmail.com
