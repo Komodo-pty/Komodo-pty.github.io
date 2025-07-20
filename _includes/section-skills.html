@@ -13,18 +13,24 @@
   {% for language in site.data.skills-languages %}
     <div skill-type="language" skill-weight="{{language.weight}}" data-aos="zoom-in">
       {{language.name}}
-      <p>A summary of the articles that I've written, and the links to them.</p>
+    </div>
+    <div skill-type="language" skill-weight="1" data-aos="zoom-in">
+      <p>A summary of the articles that I've written, and the links to them.<p>
     </div>
   {% endfor %}
   {% for framework in site.data.skills-frameworks %}
     <div skill-type="framework" skill-weight="{{framework.weight}}" data-aos="zoom-in">
       {{framework.name}}
+    </div>
+    <div skill-type="framework" skill-weight="1" data-aos="zoom-in">
       <p>Some of the research that I've conducted.</p>
     </div>
   {% endfor %}
   {% for tool in site.data.skills-tools %}
     <div skill-type="tool" skill-weight="{{tool.weight}}" data-aos="zoom-in">
       {{tool.name}}
+    </div>
+    <div skill-type="tool" skill-weight="1" data-aos="zoom-in">
       <p>A brief overview of the toolsuites that I've created.</p>
     </div>
   {% endfor %}
