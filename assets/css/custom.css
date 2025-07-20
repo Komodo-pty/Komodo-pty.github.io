@@ -41,7 +41,7 @@
 }
 
 /* Style the separator */
-.custom-fixed-header ul li:not(:last-child):not(:nth-last-child(2))::after {
+.custom-fixed-header ul li:not(:last-child)::after {
   content: "|";
   margin-left: 15px;
   color: #333;
@@ -68,7 +68,7 @@ main {
     font-size: 0.9rem; /* Smaller font for mobile */
   }
 
-  .custom-fixed-header ul li:not(:last-child):not(:nth-last-child(2))::after {
+  .custom-fixed-header ul li:not(:last-child)::after {
     margin-left: 10px; /* Smaller separator spacing */
   }
 }
