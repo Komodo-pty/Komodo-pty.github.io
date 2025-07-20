@@ -44,7 +44,9 @@
 
 - title: Palomar College 
   date: August 2017 - May 2018
-  subtitle: 4.0 GPA (2 semesters)
+  subtitle: 2 semesters
+  tags:
+    - tag: 4.0 GPA
   timeline-side: right
 
 - title: Biomedical Technology

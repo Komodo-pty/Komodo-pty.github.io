@@ -10,28 +10,36 @@
   <input type="radio" id="tool" name="filter" />
   <label class="filter-button neumorphism-button" for="tool">Tools</label>
 
-  {% for language in site.data.skills-languages %}
+<!--  {% for language in site.data.skills-languages %}
     <div skill-type="language" skill-weight="{{language.weight}}" data-aos="zoom-in">
       {{language.name}}
     </div>
-    <div skill-type="language" skill-weight="1" data-aos="zoom-in">
-      <p>A summary of the articles that I've written, and the links to them.<p>
-    </div>
   {% endfor %}
-  {% for framework in site.data.skills-frameworks %}
+
+    {% for framework in site.data.skills-frameworks %}
     <div skill-type="framework" skill-weight="{{framework.weight}}" data-aos="zoom-in">
       {{framework.name}}
     </div>
-    <div skill-type="framework" skill-weight="1" data-aos="zoom-in">
-      <p>Some of the research that I've conducted.</p>
-    </div>
   {% endfor %}
+
   {% for tool in site.data.skills-tools %}
     <div skill-type="tool" skill-weight="{{tool.weight}}" data-aos="zoom-in">
       {{tool.name}}
     </div>
-    <div skill-type="tool" skill-weight="1" data-aos="zoom-in">
-      <p>A brief overview of the toolsuites that I've created.</p>
-    </div>
   {% endfor %}
+-->
+
+<!-- Testing different style-->
+    <div skill-type="language" skill-weight="1" data-aos="zoom-in">
+      <p>A summary of the <a href="/articles/articles.html">articles</a> that I've written, and the links to them.<p>
+    </div>
+
+    <div skill-type="framework" skill-weight="1" data-aos="zoom-in">
+      <p>Some of the <a href="/notes/">research</a> that I've conducted.</p>
+    </div>
+
+    <div skill-type="tool" skill-weight="1" data-aos="zoom-in">
+      <p>A brief overview of the <a href="/toolsuites/tools.html">toolsuites</a> that I've created.</p>
+    </div>
+
 </div>
