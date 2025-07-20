@@ -33,9 +33,8 @@ linkedin_username: nathan-miller-security
 show_aboutme_card: true
 # about_me_title: The will be displayed as the title in the About Me section
 about_me_title: About Me
-# about_me_description: This will be displayed under the title.
-about_me_description: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. If you like this theme and want to use it for yourself, checkout the source code and the documentation at <a class="highlight-link" href="https://github.com/longpdo/neumorphism" target="_blank" rel="noreferrer"> Github </a>. You can also find me on <a class="highlight-link" href="https://jamstackthemes.dev/theme/jekyll-neumorphism/" target="_blank" rel="noreferrer">JAMstack Themes</a> and on <a class="highlight-link" href="https://jekyll-themes.com/neumorphism/" target="_blank" rel="noreferrer">Jekyll Themes</a>.
-
+# about_me_description: This will be displayed under the title. Can add link tags
+about_me_description: I started studying Cyber Security in January of 2021, and it quickly became my passion. Since then, I've built my knowledge of Cyber Security by exploiting hundreds of vulnerable machines for Capture the Flag (CTF) exercises and by utilizing a variety of educational resources, like Portswigger Academy and DEF CON lectures. These experiences have allowed me to continuously explore novel attack vectors.
 # SKILLS SECTION
 # show_skills_card:
 # > setting this to true, will display the Skills section
@@ -71,7 +70,7 @@ projects_title: Projects
 # > setting this to false, will omit your public projects on github
 show_os_projects: true
 # os_projects_title: The will be displayed as the title of your open source projects
-os_projects_title: Open Source Projects
+os_projects_title: Toolsuites
 
 # CONTACT SECTION
 # show_contact_card:
