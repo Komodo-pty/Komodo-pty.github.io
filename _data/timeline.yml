@@ -17,42 +17,30 @@
 #     - tag: Rails
 #   timeline-side: right
 
-- title: Freelance Pentesting
-  title-url: /assets/redacted_Pentest_Report.pdf
-#  date: Sep 2019 - Present
-  subtitle: I performed penetration testing for an independent law firm, identifying vulnerabilities and recommending mitigation strategies. A redacted report and letter of recommendation is available upon request. 
-  tags:
-
-  timeline-side: right
-
-- title: Google
-  title-url: https://example.com/
-  date: Mar 2019 - Sep 2019
-  subtitle: Software Engineer as Intern
-  tags:
-    - tag: Flutter
-    - tag: Dart
-    - tag: Keycloak
-  timeline-side: right
-
-- title: Super University
-  title-url: https://example.com/
-  date: 2017 - 2019
-  subtitle: M.Sc. Computer Science
+- title: In Progress
+  subtitle: I am currently working on obtaining the OSCP.
   timeline-side: left
 
-- title: Facebook
-  title-url: https://example.com/
-  date: Sep 2017 - Mar 2019
-  subtitle: Front-End Developer as Intern
-  tags:
-    - tag: React
-    - tag: Node
-    - tag: Javascript
+- title: OffSec Wireless Professional (OSWP) 
+  title-url: https://www.credential.net/aff765df-b328-4c4a-a0a2-046f9a969820#acc.SGNQniDs
+  date: June 2024
+  subtitle: The OSWP (PEN-210) certification covered the fundementals of wireless networks and WiFi security, including attacks and the corresponding mitigations. The exam required me to apply this knowledge in order to compromise various networks and exfiltrate the sensitive files located within them (i.e. the "flag").
   timeline-side: right
 
-- title: Super University
-  title-url: https://example.com/
-  date: 2014 - 2017
-  subtitle: B.A. Computer Science
+- title: Network Penetration Testing Essentials (PEN-100)
+  title-url: /assets/img/pen-100_badge.jpg
+  date: June 2023
+  subtitle: I completed the PEN-100 course in preperation for the PEN-200 (OSCP)
   timeline-side: left
+
+- title: Palomar College 
+  date: August 2017 - May 2018
+  subtitle: 4.0 GPA (2 semesters)
+  timeline-side: right
+
+- title: Biomedical Technology
+  #  title-url: Scan in paper with skills covered
+  date: August 2016 - January 2017
+  subtitle: Career Technical Education (CTE) — Accredited Occupational Program
+  timeline-side: left
+
