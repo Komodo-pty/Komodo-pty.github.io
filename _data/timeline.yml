@@ -24,13 +24,23 @@
 - title: OffSec Wireless Professional (OSWP) 
   title-url: https://www.credential.net/aff765df-b328-4c4a-a0a2-046f9a969820#acc.SGNQniDs
   date: June 2024
-  subtitle: The OSWP (PEN-210) certification covered the fundementals of wireless networks and WiFi security, including attacks and the corresponding mitigations. The exam required me to apply this knowledge in order to compromise various networks and exfiltrate the sensitive files located within them (i.e. the "flag").
+  subtitle: The PEN-210 (OSWP) exam required me to compromise various networks and exfiltrate sensitive files located within them (i.e. the "flags").
+  tags:
+    - tag: Networking Fundementals
+    - tag: WiFi Security
+    - tag: Wireless Attacks
   timeline-side: right
 
 - title: PEN-100
   title-url: /assets/img/pen-100_badge.jpg
   date: June 2023
   subtitle: I completed the Network Penetration Testing Essentials course in preperation for the PEN-200 (OSCP)
+  tags:
+    - tag: Linux System Administration
+    - tag: Windows System Administation
+    - tag: Bash
+    - tag: Powershell
+    - tag: Python
   timeline-side: left
 
 - title: Palomar College 
@@ -41,6 +51,8 @@
 - title: Biomedical Technology
   #  title-url: Scan in paper with skills covered
   date: August 2016 - January 2017
-  subtitle: Career Technical Education (CTE) — Accredited Occupational Program
+  subtitle: Career Technical Education (CTE)
+  tags:
+    - tag: Accredited Occupational Program
   timeline-side: left
 
