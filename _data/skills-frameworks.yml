@@ -5,6 +5,6 @@
 # - name: Framework
 #   weight: 5
 
-- name: Research
+- name: <a href="/notes/">Research</a>
   weight: 5
 

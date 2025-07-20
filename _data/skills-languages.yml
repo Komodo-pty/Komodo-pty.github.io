@@ -5,6 +5,6 @@
 # - name: Language
 #   weight: 5
 
-- name: Articles
+- name: <a href="/articles/articles.html">Articles</a>
   weight: 5
 
