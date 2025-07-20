@@ -41,7 +41,7 @@ about_me_description: I started studying Cyber Security in January of 2021, and 
 # > setting this to false, will omit the Skills section
 show_skills_card: true
 # about_me_title: The will be displayed as the title in the Skills section
-skills_title: Skills
+skills_title: Resources
 
 # TIMELINE SECTION
 # show_timeline_card:

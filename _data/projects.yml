@@ -20,14 +20,14 @@
 
 
 - name: Hackathon
-  descr: "<img src='/assets/img/hackathon_418.jpg' alt='1st Place Award' width=500 height=400 style='display: block; margin: 0 auto;'>I won first place in the expert division for the Operation 418 hacking competition.<br><br>
-    Over the course of the two day event, I compromised 16 machines across multiple networks. The goal was to identify and exfiltrate files with sensitive information, such as financial reports and customer data. The competition was organized by Virginia Tech and The Bulls Run Group."
+  descr: "<img src='/assets/img/hackathon_418.jpg' alt='1st Place Award' width=500 height=400 style='display: block; margin: 0 auto;'>I won first place in the expert division for the Operation 418 hacking competition. Over the course of the two day event, I compromised 16 machines across multiple networks.<br><br>
+    The goal was to identify and exfiltrate files with sensitive information, such as financial reports and customer data. The competition was organized by Virginia Tech and The Bulls Run Group."
   tags:
     - tag: January 2025
 
 
 - name: Homelab
-  descr: "I built and maintained a hybrid homelab using physical hardware, Xen-based virtual machines, and AWS cloud servers to gain hands-on experience in system administration, network configuration, and cybersecurity practices.<br>
+  descr: "I built and maintained a hybrid homelab using physical hardware, Xen-based virtual machines, and AWS cloud servers to gain hands-on experience in system administration, network configuration, and cybersecurity practices.<br><br>
     Key projects and skills practiced include:
       <ul>
         <li>Managing firewalls and configuring routing tables</li>
@@ -35,7 +35,7 @@
         <li>Establishing Persistence and using C2 Frameworks</li>
         <li>Sniffing network traffic, and analyzing PCAPs</li>
         <li>Creating a Rogue AP for MitM and Captive Portal attacks</li>
-        <li>Attacking network encryption (WPS and WPA Personal / Enterprise)</li>
+        <li>Attacking WPS and WPA (Personal / Enterprise) encryption</li>
         <li>Evading Antivirus’ static and dynamic detection</li>
         <li>Hosting and attacking various Web Servers</li>
       </ul>"
