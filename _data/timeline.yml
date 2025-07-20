@@ -27,10 +27,10 @@
   subtitle: The OSWP (PEN-210) certification covered the fundementals of wireless networks and WiFi security, including attacks and the corresponding mitigations. The exam required me to apply this knowledge in order to compromise various networks and exfiltrate the sensitive files located within them (i.e. the "flag").
   timeline-side: right
 
-- title: Network Penetration Testing Essentials (PEN-100)
+- title: PEN-100
   title-url: /assets/img/pen-100_badge.jpg
   date: June 2023
-  subtitle: I completed the PEN-100 course in preperation for the PEN-200 (OSCP)
+  subtitle: I completed the Network Penetration Testing Essentials course in preperation for the PEN-200 (OSCP)
   timeline-side: left
 
 - title: Palomar College 
