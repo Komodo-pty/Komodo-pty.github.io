@@ -13,21 +13,29 @@
 #     - tag: AngularJS
 #     - tag: Node
 
-- name: project X
-  descr: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam"
-  demo: https://example.com/
-  tags:
-    - tag: MongoDB
-    - tag: Express
-    - tag: AngularJS
-    - tag: Node
+- name: Freelance Pentesting
+  descr: "I performed penetration testing for an independent law firm, identifying vulnerabilities and recommending mitigation strategies. A redacted <a href='/assets/portfolio/redacted_Pentest_Report.pdf'>report</a> and letter of recommendation is available upon request."
+  demo: /assets/redacted_Pentest_Report.pdf
 
-- name: project Y
-  descr: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam"
-  demo: https://example.com/
-  tags:
-    - tag: Python
-    - tag: Django
 
-- name: project Z
-  descr: "You can also set a project without demo link and no tags"
+
+- name: Hackathon
+  descr: "<img src='your-image.jpg' alt='1st Place Award' width=600 height=500 style='display: block; margin: 0 auto;'>I won first place in the expert division for the Operation 418 hacking competition. Over the course of the two day event, I compromised 16 machines across multiple networks. The goal was to identify and exfiltrate files with sensitive information, such as financial reports and customer data. The competition was organized by Virginia Tech and The Bulls Run Group."
+  demo: /assets/img/hackathon_418.jpg
+  tags:
+    - tag: January 2025
+
+
+- name: Homelab
+  descr: "I built and maintained a hybrid homelab using physical hardware and Xen-based virtual machines to gain hands-on experience in system administration,
+ network configuration, and cybersecurity practices. Key projects and skills practiced include:
+      <ul>
+        <li>Managing firewalls and configuring routing tables</li>
+        <li>Pivoting with Port Forwarding, Proxying, and Tunneling</li>
+        <li>Establishing Persistence and using C2 Frameworks</li>
+        <li>Sniffing network traffic, and analyzing PCAPs</li>
+        <li>Creating a Rogue AP for MitM and Captive Portal attacks</li>
+        <li>Attacking network encryption (WPS and WPA Personal / Enterprise)</li>
+        <li>Evading Antivirus’ static and dynamic detection</li>
+        <li>Hosting and attacking various Web Servers</li>
+      </ul>"
