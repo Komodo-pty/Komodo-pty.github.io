@@ -13,52 +13,62 @@
 /* Style navigation for a clean look */
 .custom-fixed-header nav {
   display: flex;
-  justify-content: space-between;
+  justify-content: center; /* Center the nav for better mobile display */
   align-items: center;
 }
 
-/* Style the site title */
-.custom-fixed-header h1 {
-  margin: 0;
-  font-size: 1.5rem;
-  color: #333; /* Matches Neumorphism’s text color */
-}
-
-/* Style navigation links */
+/* Style the navigation list */
 .custom-fixed-header ul {
   list-style: none;
   margin: 0;
   padding: 0;
   display: flex;
+  flex-wrap: wrap; /* Allow items to wrap on small screens */
+  gap: 15px; /* Add spacing between items */
 }
 
+/* Style individual list items */
 .custom-fixed-header ul li {
-  margin-left: 20px;
+  margin: 0; /* Remove redundant margin */
 }
 
+/* Style navigation links */
 .custom-fixed-header ul li a {
   text-decoration: none;
   color: #333; /* Matches Neumorphism’s text color */
   font-weight: 500;
+  font-size: 1rem; /* Slightly smaller for mobile */
+}
+
+/* Style the separator */
+.custom-fixed-header ul li:not(:last-child):not(:nth-last-child(2))::after {
+  content: "|";
+  margin-left: 15px;
+  color: #333;
 }
 
 /* Add padding to main content to avoid overlap with fixed header */
 main {
-  padding-top: 70px; /* Adjust based on header height */
+  padding-top: 60px; /* Adjusted for header height */
 }
 
-/* Responsive adjustments for mobile-first design */
+/* Responsive adjustments for mobile devices */
 @media screen and (max-width: 600px) {
-  .custom-fixed-header nav {
-    flex-direction: column;
-    text-align: center;
+  .custom-fixed-header {
+    padding: 10px 15px; /* Slightly less padding on mobile */
   }
 
   .custom-fixed-header ul {
-    margin-top: 10px;
+    flex-direction: row; /* Keep horizontal but allow wrapping */
+    justify-content: center; /* Center items */
+    gap: 10px; /* Smaller gap for mobile */
   }
 
-  .custom-fixed-header ul li {
-    margin: 5px 0;
+  .custom-fixed-header ul li a {
+    font-size: 0.9rem; /* Smaller font for mobile */
+  }
+
+  .custom-fixed-header ul li:not(:last-child):not(:nth-last-child(2))::after {
+    margin-left: 10px; /* Smaller separator spacing */
   }
 }
