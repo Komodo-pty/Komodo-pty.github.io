@@ -1,0 +1,64 @@
+/* Styles for the fixed header */
+.custom-fixed-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #e0e5ec; /* Matches Neumorphism theme’s light background */
+  z-index: 1000; /* Ensures header is above other content */
+  padding: 15px 20px; /* Adjust padding for aesthetics */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Style navigation for a clean look */
+.custom-fixed-header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Style the site title */
+.custom-fixed-header h1 {
+  margin: 0;
+  font-size: 1.5rem;
+  color: #333; /* Matches Neumorphism’s text color */
+}
+
+/* Style navigation links */
+.custom-fixed-header ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.custom-fixed-header ul li {
+  margin-left: 20px;
+}
+
+.custom-fixed-header ul li a {
+  text-decoration: none;
+  color: #333; /* Matches Neumorphism’s text color */
+  font-weight: 500;
+}
+
+/* Add padding to main content to avoid overlap with fixed header */
+main {
+  padding-top: 70px; /* Adjust based on header height */
+}
+
+/* Responsive adjustments for mobile-first design */
+@media screen and (max-width: 600px) {
+  .custom-fixed-header nav {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .custom-fixed-header ul {
+    margin-top: 10px;
+  }
+
+  .custom-fixed-header ul li {
+    margin: 5px 0;
+  }
+}

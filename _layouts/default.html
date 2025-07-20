@@ -17,6 +17,9 @@
   <link rel="stylesheet" href="{{ "/assets/css/main.min.css" | prepend: site.baseurl }}">
   <link rel="stylesheet" href="{{ "/assets/css/vendors.min.css" | prepend: site.baseurl }}">
 
+<!--My custom CSS. Nesting quotes differently than other entries? -->
+  <link rel="stylesheet" href="{{ '/assets/css/custom.css' | relative_url }}">
+
   <script src="{{ "/assets/js/vendors.min.js" | prepend: site.baseurl }}"></script>
   <script src="{{ "/assets/js/app.min.js" | prepend: site.baseurl }}"></script>
 </head>
@@ -28,9 +31,13 @@
       <hr />
       <hr />
       <hr />
-    </div>
+    </div> 
   </div>
+  <!-- Adding <main> tag to apply the padding-top from custom.css-->
   {% include header.html %}
+
+  <main>
+
   {% include landing-page.html %}
   <div class="layout">
     {%if site.show_aboutme_card %}
@@ -59,6 +66,9 @@
     </section>
     {% endif %}
   </div>
+
+  </main>
+
   {% include footer.html %}
 </body>
 </html>
