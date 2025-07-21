@@ -1,45 +1,64 @@
-<!DOCTYPE html>
-<html lang="en">
+  <h1>Argus Recon</h1>
+    <p><a href="https://github.com/Komodo-pty/argus-recon" target="_blank" rel="noopener noreferrer">Argus</a> is designed to automate basic enumeration for a variety of services.</p>
 
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+      <h2>Functionality</h2>
+        <p>There are modules for:</p>
+        <ul>
+            <li>Port Scanning</li>
+            <li>Web App Enumeration</li>
+            <li>SMB Enumeration</li>
+            <li>Kerberos Enumeration</li>
+            <li>DNS Enumeration</li>
+        </ul>
 
-  <title>{{ site.title }}</title>
-  <meta name="description" content="{{ site.description }}">
+  <h1>Artemis Hunter</h1>
+    <p><a href="https://github.com/Komodo-pty/artemis-hunter" target="_blank" rel="noopener noreferrer">Artemis</a> will generate reverse shell payloads in various languages, and provides commands to stabilize those shells. Artemis also can generate commands for lateral movement in an Active Directory environment.</p>
+      <h2>Functionality</h2>
 
-  <link rel="apple-touch-icon" sizes="180x180" href="{{ "/assets/favicon/apple-touch-icon.png" | prepend: site.baseurl }}">
-  <link rel="icon" type="image/png" sizes="32x32" href="{{ "/assets/favicon/favicon-32x32.png" | prepend: site.baseurl }}">
-  <link rel="icon" type="image/png" sizes="16x16" href="{{ "/assets/favicon/favicon-16x16.png" | prepend: site.baseurl }}">
-  <link rel="manifest" href="{{ "/assets/favicon/site.webmanifest" | prepend: site.baseurl }}">
+        <h3>Reverse Shells</h3>
+          <p>Artemis creates payloads for Windows and Linux machines, and supports the following languages:</p>
+          <ul>
+            <li>PowerShell</li>
+            <li>Bash</li>
+            <li>Netcat</li>
+            <li>Java</li>
+            <li>Python</li>
+            <li>PHP</li>
+          </ul>
 
-  <link rel="stylesheet" href="{{ "/assets/css/main.min.css" | prepend: site.baseurl }}">
-  <link rel="stylesheet" href="{{ "/assets/css/vendors.min.css" | prepend: site.baseurl }}">
+        <h3>Lateral Movement</h3>
+          <p>Artemis supports the following techniques:</p>
+          <ul>
+            <li>WMI</li>
+            <li>WinRM (WinRS and PS Remoting)</li>
+            <li>DCOM</li>
+            <li>PsExec</li>
+          </ul>
 
-  <link rel="stylesheet" href="{{ '/assets/css/custom.css' | relative_url }}">
+        <h1>Hades PrivEsc</h1>
+          <p><a href="https://github.com/Komodo-pty/hades-PrivEsc" target="_blank" rel="noopener noreferrer">Hades</a> performs Post Exploitation recon for Windows machines. It can be run on a standalone machine, or on a domain-joined machine to scan the Active Directory environment.</p>
 
-  <script src="{{ "/assets/js/vendors.min.js" | prepend: site.baseurl }}"></script>
-  <script src="{{ "/assets/js/app.min.js" | prepend: site.baseurl }}"></script>
-</head>
+	  <h2>Functionality</h2>
+            <p>Hades and Charon are complimentary PowerShell scripts that are designed to work even if your shell is using a non-interactive protocol (e.g. WinRM).</p>
+	    <h3>Hades</h3>
+	      <p>The main Hades script enumerates searches a Windows machine for a variety of PrivEsc vectors and sensitive files. It also collects system information, including: routing information, installed Hotfixes, additional drives, etc.</p>
 
-<body>
-  <div id="preloader">
-    <div class="load">
-      <hr />
-      <hr />
-      <hr />
-      <hr />
-    </div> 
-  </div>
-  <!-- Adding <main> tag to apply the padding-top from custom.css-->
-  {% include header.html %}
+	      <h3>Charon</h3>
+	        <p>Charon is a supplemental program for domain-joined machines. It unravels nested groups using LDAP queries, identifies all other computers in the domain, etc.</p>
 
-  <main>
+        <h1>Ares Attack</h1>
+          <p><a href="https://github.com/Komodo-pty/ares-attack" target="_blank" rel="noopener noreferrer">Ares</a> can be used to execute simple attacks, or to setup attacks for you.</p>
+          <h2>Functionality</h2>
+  	    <p>There are modules for:</p>
+	    <ul>
+              <li>XSS (Stealing Cookies)</li>
+	      <li>Active Directory Roasting</li>
+	      <li>Mutating a wordlist</li>
+	      <li>Buffer Overflow (Generating a binary payload file)</li>
+	      <li>Bruteforcing MSSQL in an AD environment</li>
+	    </ul>
 
-  <div class="layout">
-
-	  <!-- Copy & editing line 26 from _includes/section-projects.html -->
+	    <!-- Start of dynamic Github List-->
 
   <h1 class="title">{{site.os_projects_title}}</h1>
   {% if site.projects.sort_by == 'stars' %}
@@ -83,7 +102,8 @@
                 </a>
               {% endif %}
             </div>
-          </div>
+	  </div>
+
           <p class="project-desc">{{repository.description}}</p>
           {% if repository.homepage != "" and repository.homepage != nil %}
             <a class="highlight-link" href="{{repository.homepage}}" target="_blank" rel="noreferrer">
@@ -103,19 +123,3 @@
         </div>
       {% endunless %}
     {% endfor %}
-  </div>
-
-      <!-- Include Contact on each page? -->
-
-    {%if site.show_contact_card %}
-    <section class="card neumorphism-card-big">
-      {% include section-contact.html %}
-    </section>
-    {% endif %}
-  </div>
-
-  </main>
-
-  {% include footer.html %}
-</body>
-</html>
