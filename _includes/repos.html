@@ -1,7 +1,9 @@
+<!-- testing with & w/o the projects-wrapper & span. Trying diff classes-->
 <div id="landing">
   <section class="card neumorphism-card-big">
-  <h1>Argus Recon</h1>
-    <p><a href="https://github.com/Komodo-pty/argus-recon" target="_blank" rel="noopener noreferrer">Argus</a> is designed to automate basic enumeration for a variety of services.</p>
+    <h1 class="title"><span>Argus Recon</span></h1>
+      <div class="projects-wrapper">
+        <p class="subtitle"><a href="https://github.com/Komodo-pty/argus-recon" target="_blank" rel="noopener noreferrer">Argus</a> is designed to automate basic enumeration for a variety of services.</p>
 
       <h2>Functionality</h2>
         <p>There are modules for:</p>
@@ -12,15 +14,20 @@
             <li>Kerberos Enumeration</li>
             <li>DNS Enumeration</li>
         </ul>
+    </div>
   </section>
 
   <section class="card neumorphism-card-big">
-  <h1>Artemis Hunter</h1>
-    <p><a href="https://github.com/Komodo-pty/artemis-hunter" target="_blank" rel="noopener noreferrer">Artemis</a> will generate reverse shell payloads in various languages, and provides commands to stabilize those shells. Artemis also can generate commands for lateral movement in an Active Directory environment.</p>
-      <h2>Functionality</h2>
-
+    <h1 class="title">Artemis Hunter</h1>
+      <p class="subtitle">
+        <a href="https://github.com/Komodo-pty/artemis-hunter" target="_blank" rel="noopener noreferrer">Artemis</a> will generate reverse shell payloads in various languages, and provides commands to stabilize those shells. Artemis also can generate commands for lateral movement in an Active Directory environment.
+      </p>
+      <div class="project neumorphism-card" data-aos="zoom-in-down">
+        <div class="name-link-wrapper">
+          <h2>Functionality</h2>
+	</div>
         <h3>Reverse Shells</h3>
-          <p>Artemis creates payloads for Windows and Linux machines, and supports the following languages:</p>
+          <p class="project-desc">Artemis creates payloads for Windows and Linux machines, and supports the following languages:</p>
           <ul>
             <li>PowerShell</li>
             <li>Bash</li>
@@ -38,6 +45,7 @@
             <li>DCOM</li>
             <li>PsExec</li>
           </ul>
+      </div>
   </section>
 
   <section class="card neumorphism-card-big">
