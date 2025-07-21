@@ -62,13 +62,14 @@
 
   <h1 class="title">{{site.os_projects_title}}</h1>
   {% if site.projects.sort_by == 'stars' %}
-<!-- Testing removal. Don't think that Liquid supports the use of Tuples to sort by multiple keys
 
+  <!--Liquid doesn't support tuples
     {% assign sort_order = 'stargazers_count', 'last' %}
-    -->
-    <!--Possible alternative sorting mechanism
-	    {% assign sort_order = 'stargazers_count' %}
-    -->
+  -->
+
+    <!--Possible alternative sorting mechanism -->
+    {% assign sort_order = 'stargazers_count' %}
+    
   {% else %}
     {% assign sort_order = 'pushed_at' %}
   {% endif %}
