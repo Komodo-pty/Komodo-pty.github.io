@@ -41,8 +41,6 @@
 
     {% include {{ page.section | default: 'default' }}.html %}
 
-  </div>
-
       <!-- Include Contact on each page? -->
 
     {%if site.show_contact_card %}
@@ -51,7 +49,6 @@
     </section>
     {% endif %}
   </div>
-
   </main>
 
   {% include footer.html %}
