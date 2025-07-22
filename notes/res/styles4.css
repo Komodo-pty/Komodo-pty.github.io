@@ -203,6 +203,11 @@ div.page h3 {
     display: inline;
 }
 
+.subheading {
+	color: #16a085;
+	text-decoration: underline;
+}
+
 /* LINKS */
 
 /*div.page a, div.page a:visited {

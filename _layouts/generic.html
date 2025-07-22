@@ -39,7 +39,9 @@
 
   <div class="layout">
 
-    {% include {{ page.section | default: 'default' }}.html %}
+    {% unless page.no_header %}
+      {% include {{ page.section | default: 'default' }}.html %}
+    {% endunless %}
 
       <!-- Include Contact on each page? -->
 
