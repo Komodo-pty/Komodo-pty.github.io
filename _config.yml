@@ -80,7 +80,7 @@ show_contact_card: true
 # contact_title: The will be displayed as the title in the Contact section
 contact_title: Contact
 # contact_description: This will be displayed under the title.
-contact_description: For job related inquries, you can reach me at the following email address.<br><br>Feel free to encrypt your message using my <a class="highlight-link" href="/assets/pgp_subkey.asc" target="_blank" rel="noreferrer">PGP key</a>.
+contact_description: For work related inquries, you can reach me at the following email address.<br><br>Feel free to encrypt your message using my <a class="highlight-link" href="/assets/pgp_subkey.asc" target="_blank" rel="noreferrer">PGP key</a>.
 
 # GITHUB-METADATA
 # Set this to your forked repository
