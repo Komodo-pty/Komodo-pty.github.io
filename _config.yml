@@ -70,7 +70,7 @@ projects_title: Experience
 # > setting this to false, will omit your public projects on github
 show_os_projects: true
 # os_projects_title: The will be displayed as the title of your open source projects
-os_projects_title: Pinned Repositories<br><p class="description">For a summary of functionality, see <a href="/toolsuites/tools.html">Toolsuites</a></p>
+os_projects_title: Pinned Repositories<br><p class="subtitle">For a summary of functionality, see <a class="highlight-link" href="/toolsuites/tools.html">Toolsuites</a></p>
 
 # CONTACT SECTION
 # show_contact_card:

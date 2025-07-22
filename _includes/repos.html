@@ -1,32 +1,32 @@
-<!-- <div id="landing"> -->
 <div class="layout">
   <section class="card neumorphism-card-big">
     <h1 class="title">Argus Recon</h1>
         <p class="description">
-	  <a href="https://github.com/Komodo-pty/argus-recon" target="_blank" rel="noopener noreferrer">Argus</a> is designed to automate basic enumeration for a variety of services.
+	  <a class="highlight-link" href="https://github.com/Komodo-pty/argus-recon" target="_blank" rel="noopener noreferrer">Argus</a> is designed to automate basic enumeration for a variety of services.
 	</p>
-
-      <h2 class="subtitle">Functionality</h2>
-        <p class="description">There are modules for:</p>
-        <ul class="description">
+      <div class="card neumorphism-card">
+        <h2 class="subtitle">Functionality</h2>
+          <p class="description">There are modules for:</p>
+          <ul class="description">
             <li>Port Scanning</li>
             <li>Web App Enumeration</li>
             <li>SMB Enumeration</li>
             <li>Kerberos Enumeration</li>
             <li>DNS Enumeration</li>
-        </ul>
+          </ul>
+      </div>
   </section>
 
   <section class="card neumorphism-card-big">
     <h1 class="title">Artemis Hunter</h1>
       <p class="description">
-        <a href="https://github.com/Komodo-pty/artemis-hunter" target="_blank" rel="noopener noreferrer">Artemis</a> will generate reverse shell payloads in various languages, and provides commands to stabilize those shells. Artemis also can generate commands for lateral movement in an Active Directory environment.
+        <a class="highlight-link" href="https://github.com/Komodo-pty/artemis-hunter" target="_blank" rel="noopener noreferrer">Artemis</a> will generate reverse shell payloads in various languages, and provides commands to stabilize those shells. Artemis also can generate commands for lateral movement in an Active Directory environment.
       </p>
       <div class="card neumorphism-card">
         <h2 class="subtitle">Functionality</h2>
         <h3>Reverse Shells</h3>
           <p class="description">Artemis creates payloads for Windows and Linux machines, and supports the following languages:</p>
-          <ul>
+          <ul class="description">
             <li>PowerShell</li>
             <li>Bash</li>
             <li>Netcat</li>
@@ -36,8 +36,8 @@
           </ul>
 
         <h3>Lateral Movement</h3>
-          <p>Artemis supports the following techniques:</p>
-          <ul>
+          <p class="description">Artemis supports the following techniques:</p>
+	  <ul class="description">
             <li>WMI</li>
             <li>WinRM (WinRS and PS Remoting)</li>
             <li>DCOM</li>
@@ -47,24 +47,30 @@
   </section>
 
   <section class="card neumorphism-card-big">
-        <h1>Hades PrivEsc</h1>
-          <p><a href="https://github.com/Komodo-pty/hades-PrivEsc" target="_blank" rel="noopener noreferrer">Hades</a> performs Post Exploitation recon for Windows machines. It can be run on a standalone machine, or on a domain-joined machine to scan the Active Directory environment.</p>
+        <h1 class="title">Hades PrivEsc</h1>
+          <p class="description">
+	    <a class="highlight-link" href="https://github.com/Komodo-pty/hades-PrivEsc" target="_blank" rel="noopener noreferrer">Hades</a> performs Post Exploitation recon for Windows machines. It can be run on a standalone machine, or on a domain-joined machine to scan the Active Directory environment.
+	  </p>
 
-	  <h2>Functionality</h2>
-            <p>Hades and Charon are complimentary PowerShell scripts that are designed to work even if your shell is using a non-interactive protocol (e.g. WinRM).</p>
-	    <h3>Hades</h3>
-	      <p>The main Hades script enumerates searches a Windows machine for a variety of PrivEsc vectors and sensitive files. It also collects system information, including: routing information, installed Hotfixes, additional drives, etc.</p>
+          <div class="card neumorphism-card">
+  	    <h2 class="subtitle">Functionality</h2>
+              <p class="description">Hades and Charon are complimentary PowerShell scripts that are designed to work even if your shell is using a non-interactive protocol (e.g. WinRM).</p>
+	        <h3>Hades</h3>
+	          <p class="description">The main Hades script enumerates searches a Windows machine for a variety of PrivEsc vectors and sensitive files. It also collects system information, including: routing information, installed Hotfixes, additional drives, etc.</p>
 
-	      <h3>Charon</h3>
-	        <p>Charon is a supplemental program for domain-joined machines. It unravels nested groups using LDAP queries, identifies all other computers in the domain, etc.</p>
+	        <h3>Charon</h3>
+	          <p class="description">Charon is a supplemental program for domain-joined machines. It unravels nested groups using LDAP queries, identifies all other computers in the domain, etc.</p>
+	  </div>
   </section>
 
   <section class="card neumorphism-card-big">
-        <h1>Ares Attack</h1>
-          <p><a href="https://github.com/Komodo-pty/ares-attack" target="_blank" rel="noopener noreferrer">Ares</a> can be used to execute simple attacks, or to setup attacks for you.</p>
-          <h2>Functionality</h2>
-  	    <p>There are modules for:</p>
-	    <ul>
+        <h1 class="title">Ares Attack</h1>
+          <p class="description">
+	    <a class="highlight-link" href="https://github.com/Komodo-pty/ares-attack" target="_blank" rel="noopener noreferrer">Ares</a> can be used to execute simple attacks, or to setup attacks for you.
+	  </p>
+          <h2 class="subtitle">Functionality</h2>
+  	    <p class="description">There are modules for:</p>
+	    <ul class="description">
               <li>XSS (Stealing Cookies)</li>
 	      <li>Active Directory Roasting</li>
 	      <li>Mutating a wordlist</li>
@@ -72,73 +78,4 @@
 	      <li>Bruteforcing MSSQL in an AD environment</li>
 	    </ul>
   </section>
-
-	    <!-- Start of dynamic Github List-->
-<section class="card neumorphism-card-big">
-  <h1 class="title">{{site.os_projects_title}}</h1>
-  {% if site.projects.sort_by == 'stars' %}
-    {% assign sort_order = 'stargazers_count' %}
-  {% else %}
-    {% assign sort_order = 'pushed_at' %}
-  {% endif %}
-
-  {% if site.projects.exclude.archived && site.projects.exclude.forks %}
-    {% assign filtered_repos = site.github.public_repositories | where:'archived', false | where:'fork', false | sort: sort_order | reverse %}
-  {% elsif site.projects.exclude.archived %}
-    {% assign filtered_repos = site.github.public_repositories | where:'archived', false | sort: sort_order | reverse %}
-  {% elsif site.projects.exclude.forks %}
-    {% assign filtered_repos = site.github.public_repositories | where:'fork', false | sort: sort_order | reverse %}
-  {% else %}
-    {% assign filtered_repos = site.github.public_repositories | sort: sort_order | reverse %}
-  {% endif %}
-
-  <div class="projects-wrapper">
-    {% for repository in filtered_repos %}
-      {% unless site.projects.exclude.projects contains repository.name %}
-        <div class="project neumorphism-card" data-aos="zoom-in-down">
-          <div class="name-link-wrapper">
-            <h3>{{ repository.name }}</h3>
-            <div class="links">
-              {% if repository.stargazers_count != 0 %}
-                <a href="{{ repository.html_url }}/stargazers" class="project-stars-forks">
-                  <svg viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">
-                    <path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z">
-                    </path>
-                  </svg>{{ repository.stargazers_count }}
-                </a>
-                {% endif %}
-                {% if repository.forks_count != 0 %}
-                <a href="{{ repository.html_url }}/network/members" class="project-stars-forks">
-                  <svg viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">
-                    <path fill-rule="evenodd"
-                      d="M10 5c0-1.11-.89-2-2-2a1.993 1.993 0 0 0-1 3.72v.3c-.02.52-.23.98-.63 1.38-.4.4-.86.61-1.38.63-.83.02-1.48.16-2 .45V4.72a1.993 1.993 0 0 0-1-3.72C.88 1 0 1.89 0 3a2 2 0 0 0 1 1.72v6.56c-.59.35-1 .99-1 1.72 0 1.11.89 2 2 2 1.11 0 2-.89 2-2 0-.53-.2-1-.53-1.36.09-.06.48-.41.59-.47.25-.11.56-.17.94-.17 1.05-.05 1.95-.45 2.75-1.25S8.95 7.77 9 6.73h-.02C9.59 6.37 10 5.73 10 5zM2 1.8c.66 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2C1.35 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2zm0 12.41c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm6-8c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z">
-                    </path>
-                  </svg>{{ repository.forks_count }}
-                </a>
-              {% endif %}
-            </div>
-	  </div>
-
-          <p class="project-desc">{{repository.description}}</p>
-          {% if repository.homepage != "" and repository.homepage != nil %}
-            <a class="highlight-link" href="{{repository.homepage}}" target="_blank" rel="noreferrer">
-              Demo
-            </a>
-          {% endif %}
-          <a class="highlight-link" href="{{repository.html_url}}" target="_blank" rel="noreferrer">
-            Github
-          </a>
-          {% if repository.topics %}
-            <div class="tag-wrapper">
-              {% for topic in repository.topics %}
-                <span class="tag neumorphism-card">{{topic}}</span>
-              {% endfor %}
-            </div>
-          {% endif %}
-        </div>
-      {% endunless %}
-    {% endfor %}
-  </div>
-
-</section>
 </div>
