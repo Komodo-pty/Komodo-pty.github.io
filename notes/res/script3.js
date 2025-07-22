@@ -1,6 +1,10 @@
+/*
 right_arrow_heavy = '&#129090;'
 left_arrow_heavy = '&#129088;'
+*/
 
+right_arrow_heavy = '\u2192';
+left_arrow_heavy = '\u2190';
 
 function changeFrame(file_path){
 	var iframe = document.getElementById("page_frame");
