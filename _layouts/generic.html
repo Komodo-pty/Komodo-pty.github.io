@@ -33,15 +33,15 @@
     </div> 
   </div>
   <!-- Adding <main> tag to apply the padding-top from custom.css-->
-  {% include header.html %}
+    {% unless page.no_header %}
+      {% include header.html %}
+    {% endunless %}
 
   <main>
 
   <div class="layout">
 
-    {% unless page.no_header %}
-      {% include {{ page.section | default: 'default' }}.html %}
-    {% endunless %}
+    {% include {{ page.section | default: 'default' }}.html %}
 
       <!-- Include Contact on each page? -->
 
