@@ -14,13 +14,13 @@
 #     - tag: Node
 
 - name: Freelance Pentesting
-  descr: "I performed penetration testing for an independent law firm, identifying vulnerabilities and recommending mitigation strategies. A redacted <a href='/assets/redacted_Pentest_Report.pdf'>report</a> and letter of recommendation is available upon request."
+  descr: "I performed penetration testing for an independent law firm, identifying vulnerabilities and recommending mitigation strategies. A redacted <a class='highlight-link' href='/assets/redacted_Pentest_Report.pdf'>report</a> and letter of recommendation is available upon request."
     #  demo: /assets/redacted_Pentest_Report.pdf
 
 
 
 - name: Hackathon
-  descr: "<img src='/assets/img/hackathon_418.jpg' alt='1st Place Award' width=550 height=450 style='display: block; margin: 0 auto;'>I won first place in the expert division for the Operation 418 hacking competition. Over the course of the two day event, I compromised 16 machines across multiple networks.<br><br>
+  descr: "<img class='responsive-img' src='/assets/img/hackathon_418.jpg' alt='1st Place Award' width=550 height=450 style='display: block; margin: 0 auto;'>I won first place in the expert division for the Operation 418 hacking competition. Over the course of the two day event, I compromised 16 machines across multiple networks.<br><br>
     The goal was to identify and exfiltrate files with sensitive information, such as financial reports and customer data. The competition was organized by Virginia Tech and The Bulls Run Group."
   tags:
     - tag: January 2025
