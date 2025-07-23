@@ -6,6 +6,13 @@
         <div class="name-link-wrapper">
           <h3>{{project.name}}</h3>
         </div>
+
+          {% if project.name == "Hackathon" %}
+            <div class="image-container">
+	      <img class="responsive-img" src="/assets/img/hackathon_418.jpg" alt="1st Place Award" width=550 height=450>
+	    </div>
+	  {% endif %}
+
         <p class="project-desc">{{project.descr}}</p>
         {% if project.demo %}
           <a class="highlight-link" href="{{project.demo}}" target="_blank" rel="noreferrer">
