@@ -911,8 +911,6 @@ a {
   }
 }
 
-/* Testing Mobile Design */
-
 /* Responsive image styles */
 .responsive-img {
   max-width: 100%;
@@ -923,11 +921,12 @@ a {
   border-radius: 0.5rem; /* Matches neumorphism aesthetic */
 }
 
-/* Optional: Container for images */
+/* Container for images */
 .image-container {
   max-width: 100%;
   overflow: hidden; /* Prevents image overflow */
   margin: 0.5rem 0;
+  text-align: center; /* Ensures centering for all devices */
 }
 
 /* Mobile-specific styles for portrait orientation */
@@ -938,26 +937,61 @@ a {
   }
 
   .layout {
-    margin: 0.5rem;
-    padding: 1rem;
+    margin: 0.25rem;
+    padding: 0.5rem;
     max-width: 100%; /* Remove fixed max-width */
     box-sizing: border-box;
   }
 
   .layout .card {
-    margin: 1rem 0;
-    padding: 1rem;
-    border-radius: 1rem;
+    margin: 0.5rem 0;
+    padding: 0.75rem;
+    border-radius: 0.75rem;
   }
 
   /* Responsive Images */
   .responsive-img {
     width: 100%; /* Forces images to fill container width */
-    max-height: 50vh; /* Limits height to avoid excessive vertical space */
+    max-height: 40vh; /* Reduced to avoid excessive vertical space */
+    object-fit: contain; /* Maintain aspect ratio */
+    border-radius: 0.5rem;
   }
 
   .image-container {
-    padding: 0.5rem;
+    padding: 0.25rem;
+    max-width: 90%; /* Slightly less than 100% to avoid edge overflow */
+    margin: 0.5rem auto; /* Center container */
+  }
+
+  /* Projects Section */
+  .projects-wrapper {
+    flex-direction: column; /* Stack projects vertically */
+    > * {
+      width: 100%; /* Full width for project cards */
+      margin: 0.5rem 0;
+      padding: 0.5rem;
+    }
+
+    .project .name-link-wrapper {
+      flex-direction: column; /* Stack name and links vertically on mobile */
+      align-items: flex-start;
+    }
+
+    .project .links {
+      margin: 0.5rem 0;
+      font-size: 1.2rem;
+    }
+
+    .project-desc {
+      font-size: 0.9rem; /* Slightly smaller text for readability */
+      line-height: 1.2rem;
+    }
+  }
+
+  /* About Me Section */
+  .image-container {
+    max-width: 80%; /* Slightly smaller to prevent edge overflow */
+    margin: 0.5rem auto;
   }
 
   /* Skills Section */
@@ -1014,26 +1048,17 @@ a {
     }
   }
 
-  /* Projects Section */
-  .projects-wrapper {
-    flex-direction: column; /* Stack projects vertically */
-    > * {
-      width: 100%; /* Full width for project cards */
-      margin: 0.5rem 0;
-    }
-  }
-
   /* Landing Page */
   #landing {
     flex-direction: column;
     justify-content: center;
     margin: 0;
-    padding: 1rem;
+    padding: 0.5rem;
   }
 
   .landing-title {
     position: static;
-    margin: 1rem 0;
+    margin: 0.5rem 0;
     top: auto;
   }
 
@@ -1050,8 +1075,8 @@ a {
   /* Footer */
   .footer {
     margin: 0;
-    padding: 1rem;
-    font-size: 0.9rem;
+    padding: 0.5rem;
+    font-size: 0.85rem;
   }
 
   /* Preloader */
