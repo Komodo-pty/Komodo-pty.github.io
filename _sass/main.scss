@@ -648,6 +648,38 @@ a {
   }
 }
 
+/* Responsive image styles */
+.responsive-img {
+  max-width: 100%;
+  max-height: 100%; /* Ensure image fits within parent container height */
+  height: auto;
+  display: block; /* Prevents inline spacing issues */
+  margin: 0 auto; /* Centers images horizontally */
+  object-fit: contain; /* Ensures images scale without distortion */
+  border-radius: 0.5rem; /* Matches neumorphism aesthetic */
+}
+
+/* Container for images */
+.image-container {
+  width: 100%; /* Use full width of parent */
+  max-height: inherit; /* Inherit max-height from parent if set */
+  overflow: hidden; /* Prevents image overflow */
+  margin: 0.5rem 0;
+  text-align: center; /* Ensures centering for all devices */
+}
+
+/* Specific styles for About Me section */
+.card.neumorphism-card-big .image-container {
+  max-width: calc(100% - 4rem); /* Account for card padding (2rem left + 2rem right) */
+  max-height: 50vh; /* Limit height to prevent overflow */
+}
+
+/* Specific styles for Projects section */
+.project.neumorphism-card .image-container {
+  max-width: calc(100% - 2rem); /* Account for project padding (1rem left + 1rem right) */
+  max-height: 30vh; /* Smaller height for project cards to balance content */
+}
+
 /* Media Queries */
 
 @media only screen and (min-width: $small-screen) {
@@ -831,6 +863,17 @@ a {
       font-size: 2rem;
     }
   }
+
+  /* Adjust image containers for larger screens */
+  .card.neumorphism-card-big .image-container {
+    max-width: calc(100% - 4rem); /* Account for card padding */
+    max-height: 60vh; /* Slightly larger for desktop */
+  }
+
+  .project.neumorphism-card .image-container {
+    max-width: calc(100% - 2rem); /* Account for project padding */
+    max-height: 35vh; /* Slightly larger for desktop */
+  }
 }
 
 @media only screen and (min-width: $medium-screen) {
@@ -865,6 +908,17 @@ a {
       width: 45%;
     }
   }
+
+  /* Adjust image containers */
+  .card.neumorphism-card-big .image-container {
+    max-width: calc(100% - 6rem); /* Account for increased padding */
+    max-height: 65vh;
+  }
+
+  .project.neumorphism-card .image-container {
+    max-width: calc(100% - 2rem);
+    max-height: 40vh;
+  }
 }
 
 @media only screen and (min-width: $large-screen) {
@@ -895,6 +949,17 @@ a {
       width: 46%;
     }
   }
+
+  /* Adjust image containers */
+  .card.neumorphism-card-big .image-container {
+    max-width: calc(100% - 10rem); /* Account for increased padding */
+    max-height: 70vh;
+  }
+
+  .project.neumorphism-card .image-container {
+    max-width: calc(100% - 2rem);
+    max-height: 45vh;
+  }
 }
 
 /* Reusable Animations */
@@ -909,24 +974,6 @@ a {
   100% {
     bottom: 0;
   }
-}
-
-/* Responsive image styles */
-.responsive-img {
-  max-width: 100%;
-  height: auto;
-  display: block; /* Prevents inline spacing issues */
-  margin: 0 auto; /* Centers images horizontally */
-  object-fit: contain; /* Ensures images scale without distortion */
-  border-radius: 0.5rem; /* Matches neumorphism aesthetic */
-}
-
-/* Container for images */
-.image-container {
-  max-width: 100%;
-  overflow: hidden; /* Prevents image overflow */
-  margin: 0.5rem 0;
-  text-align: center; /* Ensures centering for all devices */
 }
 
 /* Mobile-specific styles for portrait orientation */
@@ -951,8 +998,8 @@ a {
 
   /* Responsive Images */
   .responsive-img {
-    width: 100%; /* Forces images to fill container width */
-    max-height: 40vh; /* Reduced to avoid excessive vertical space */
+    width: 100%; /* Fill container width */
+    max-height: 100%; /* Ensure image fits parent height */
     object-fit: contain; /* Maintain aspect ratio */
     border-radius: 0.5rem;
   }
@@ -963,7 +1010,18 @@ a {
     margin: 0.5rem auto; /* Center container */
   }
 
+  /* About Me Section */
+  .card.neumorphism-card-big .image-container {
+    max-width: calc(100% - 1.5rem); /* Account for card padding (0.75rem left + 0.75rem right) */
+    max-height: 40vh; /* Reduced to avoid excessive vertical space */
+  }
+
   /* Projects Section */
+  .project.neumorphism-card .image-container {
+    max-width: calc(100% - 1rem); /* Account for project padding (0.5rem left + 0.5rem right) */
+    max-height: 25vh; /* Smaller to balance project card content */
+  }
+
   .projects-wrapper {
     flex-direction: column; /* Stack projects vertically */
     > * {
@@ -986,12 +1044,6 @@ a {
       font-size: 0.9rem; /* Slightly smaller text for readability */
       line-height: 1.2rem;
     }
-  }
-
-  /* About Me Section */
-  .image-container {
-    max-width: 80%; /* Slightly smaller to prevent edge overflow */
-    margin: 0.5rem auto;
   }
 
   /* Skills Section */
