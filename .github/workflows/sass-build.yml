@@ -2,7 +2,7 @@ name: Build and Minify SCSS
 
 on:
   push:
-    branches: [prod]  # Or your default branch
+    branches: [dev]  # Or your default branch
   pull_request:
 
 jobs:
