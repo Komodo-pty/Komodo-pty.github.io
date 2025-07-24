@@ -1,8 +1,10 @@
 /* Imports */
+
 @import url("https://fonts.googleapis.com/css?family=Raleway&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap");
 
 /* Variables */
+
 $small-screen: 48em !default;
 $medium-screen: 62em !default;
 $large-screen: 75em !default;
@@ -345,6 +347,7 @@ a {
       stroke-width: 0.5rem;
     }
     to {
+      stroke: $text-color;
       stroke-dasharray: 83;
       stroke-width: 0.5rem;
     }
@@ -645,55 +648,417 @@ a {
   }
 }
 
-/* Responsive image styles */
-.responsive-img {
-  display: block;
-  margin: 0 auto;
-  max-width: 100%;
-  max-height: 100%;
-  width: 100%;
-  height: auto;
-  object-fit: contain;
-  border-radius: 0.5rem;
-}
+/* Media Queries */
 
-/* Container for images */
-.image-container {
-  width: 100%;
-  height: auto;
-  max-height: 100%;
-  overflow: hidden;
-  margin: 0.5rem 0;
-  text-align: center;
-  aspect-ratio: 4 / 3;
-}
+@media only screen and (min-width: $small-screen) {
+  .layout {
+    margin: 0.5rem auto;
+    padding: 2rem 2rem;
+  }
 
-/* Specific styles for About Me section */
-.card.neumorphism-card-big {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  overflow: hidden;
+  .layout .card .subtitle {
+    font-size: 1.25rem;
+  }
 
-  .image-container {
-    max-width: calc(100% - 4rem);
-    max-height: 50vh;
-    padding: 0.5rem;
+  .layout .card .description {
+    font-size: 1.25rem;
+  }
+
+  .landing-title h1 {
+    font-size: 3rem;
+  }
+
+  .landing-icons .social-link {
+    width: 4rem;
+    height: 4rem;
+    line-height: 4rem;
+
+    .social {
+      font-size: 2rem;
+    }
+  }
+
+  #skills {
+    div[skill-weight="1"] {
+      font-size: 1rem;
+      line-height: 0rem;
+    }
+
+    div[skill-weight="2"] {
+      font-size: 2rem;
+      line-height: 1rem;
+    }
+
+    div[skill-weight="3"] {
+      font-size: 3rem;
+      line-height: 2rem;
+    }
+
+    div[skill-weight="4"] {
+      font-size: 4rem;
+      line-height: 3rem;
+    }
+
+    div[skill-weight="5"] {
+      font-size: 5rem;
+      line-height: 4rem;
+    }
+
+    .filter-button {
+      border-radius: 0.5rem;
+      cursor: pointer;
+      display: unset;
+      margin: 0 0.5rem 1rem;
+      padding: 0.5rem 0.25rem;
+      text-align: center;
+      width: 21%;
+
+      &:hover {
+        letter-spacing: 0.25rem;
+      }
+    }
+
+    @mixin filter-out {
+      height: 0;
+      margin: 0;
+      opacity: 0;
+      padding: 0;
+      width: 0;
+    }
+
+    input[type="radio"]:checked + .filter-button {
+      color: $primary-color;
+      font-weight: $font-weight-strong;
+      @include neumorphism-button-pressed();
+    }
+
+    input[id="language"]:checked ~ div[skill-type="framework"],
+    input[id="language"]:checked ~ div[skill-type="tool"] {
+      @include filter-out;
+    }
+
+    input[id="framework"]:checked ~ div[skill-type="language"],
+    input[id="framework"]:checked ~ div[skill-type="tool"] {
+      @include filter-out;
+    }
+
+    input[id="tool"]:checked ~ div[skill-type="language"],
+    input[id="tool"]:checked ~ div[skill-type="framework"] {
+      @include filter-out;
+    }
+  }
+
+  .timeline-wrapper {
+    .timeline {
+      margin: 0 auto;
+      width: 39.25rem;
+    }
+
+    .timeline li:after {
+      clear: both;
+      content: "";
+      display: block;
+    }
+
+    .direction-l {
+      float: left;
+      text-align: right;
+      width: 18.5rem;
+
+      .hexagon {
+        left: auto;
+        right: -1.6rem;
+        top: 0.4rem;
+      }
+
+      .flag-wrapper {
+        display: inline-block;
+        text-align: right;
+      }
+
+      .time-wrapper {
+        float: left;
+        margin-top: -0.1rem;
+      }
+
+      .desc {
+        text-align: right;
+      }
+    }
+
+    .direction-r {
+      float: right;
+      text-align: left;
+      width: 18.5rem;
+
+      .hexagon {
+        left: -1.6rem;
+        right: auto;
+        top: 0.4rem;
+      }
+
+      .flag-wrapper {
+        display: inline-block;
+        text-align: left;
+      }
+
+      .time-wrapper {
+        float: right;
+        margin-top: -0.1rem;
+      }
+
+      .desc {
+        text-align: left;
+      }
+    }
+  }
+
+  .projects-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    > * {
+      width: 44%;
+    }
+  }
+
+  .contact-icons .social-link {
+    width: 4rem;
+    height: 4rem;
+    line-height: 4rem;
+
+    .social {
+      font-size: 2rem;
+    }
   }
 }
 
-/* Specific styles for Projects section */
-.project.neumorphism-card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  overflow: hidden;
+@media only screen and (min-width: $medium-screen) {
+  .layout {
+    padding: 3rem 3rem;
+  }
+
+  .layout .card {
+    padding: 1rem 3rem;
+  }
+
+  #skills .filter-button {
+    width: 21.5%;
+  }
+
+  .timeline-wrapper {
+    .timeline {
+      width: 49rem;
+    }
+
+    .direction-l {
+      width: 23.35rem;
+    }
+
+    .direction-r {
+      width: 23.35rem;
+    }
+  }
+
+  .projects-wrapper {
+    > * {
+      width: 45%;
+    }
+  }
+}
+
+@media only screen and (min-width: $large-screen) {
+  .layout {
+    padding: 5rem 5rem;
+  }
+
+  #skills .filter-button {
+    width: 22%;
+  }
+
+  .timeline-wrapper {
+    .timeline {
+      width: 58rem;
+    }
+
+    .direction-l {
+      width: 27.9rem;
+    }
+
+    .direction-r {
+      width: 27.9rem;
+    }
+  }
+
+  .projects-wrapper {
+    > * {
+      width: 46%;
+    }
+  }
+}
+
+/* Reusable Animations */
+
+@keyframes jump {
+  0% {
+    bottom: 0;
+  }
+  50% {
+    bottom: 0.5rem;
+  }
+  100% {
+    bottom: 0;
+  }
+}
+
+/* Testing Mobile Design */
+
+/* Responsive image styles */
+.responsive-img {
+  width: 100%
+  max-width: 100%;
+  height: auto;
+  display: block; /* Prevents inline spacing issues */
+  object-fit: contain; /* Ensures images scale without distortion */
+  border-radius: 1rem; /* Matches neumorphism aesthetic */
+}
+
+/* Optional: Container for images */
+.image-container {
+  width: 100%
+  max-width: 100%;
+  overflow: hidden; /* Prevents image overflow */
+  margin: 1rem auto;
+  text-align: center;
+}
+
+/* Mobile-specific styles for portrait orientation */
+@media only screen and (max-width: 767px) {
+  /* General Layout */
+  html {
+    overflow: auto; /* Allow scrolling on mobile */
+  }
+
+  .layout {
+    margin: 0.5rem;
+    padding: 1rem;
+    max-width: 100%; /* Remove fixed max-width */
+    box-sizing: border-box;
+  }
+
+  .layout .card {
+    margin: 1rem 0;
+    padding: 1rem;
+    border-radius: 1rem;
+  }
+
+  /* Responsive Images */
+  .responsive-img {
+    width: 100%; /* Forces images to fill container width */
+    max-height: 50vh; /* Limits height to avoid excessive vertical space */
+  }
 
   .image-container {
-    max-width: calc(100% - 2rem);
-    max-height: 30vh;
     padding: 0.5rem;
+  }
+
+  /* Skills Section */
+  #skills {
+    flex-direction: column; /* Stack skills vertically */
+    align-items: center;
+
+    div {
+      padding: 0.5rem;
+      font-size: 0.9rem !important; /* Override large font sizes */
+      line-height: 1rem !important;
+    }
+
+    .filter-button {
+      width: 80%; /* Full-width buttons for better touch interaction */
+      margin: 0.5rem auto;
+    }
+  }
+
+  /* Timeline Section */
+  .timeline-wrapper {
+    .timeline {
+      width: 100%; /* Full width for mobile */
+      padding: 0 0.5rem;
+    }
+
+    .timeline:before {
+      left: 1rem; /* Move timeline to left for single-column layout */
+      margin-left: 0;
+    }
+
+    .direction-l,
+    .direction-r {
+      float: none;
+      width: 100%; /* Stack timeline items */
+      text-align: left;
+
+      .hexagon {
+        left: 0.5rem;
+        right: auto;
+        top: 0.4rem;
+      }
+
+      .flag-wrapper,
+      .desc {
+        text-align: left;
+        margin-left: 2rem; /* Align content with timeline */
+      }
+
+      .time-wrapper {
+        float: none;
+        margin-top: 0.5rem;
+      }
+    }
+  }
+
+  /* Projects Section */
+  .projects-wrapper {
+    flex-direction: column; /* Stack projects vertically */
+    > * {
+      width: 100%; /* Full width for project cards */
+      margin: 0.5rem 0;
+    }
+  }
+
+  /* Landing Page */
+  #landing {
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+    padding: 1rem;
+  }
+
+  .landing-title {
+    position: static;
+    margin: 1rem 0;
+    top: auto;
+  }
+
+  .landing-icons .social-link {
+    width: 2.5rem;
+    height: 2.5rem;
+    line-height: 2.5rem;
+
+    .social {
+      font-size: 1.2rem;
+    }
+  }
+
+  /* Footer */
+  .footer {
+    margin: 0;
+    padding: 1rem;
+    font-size: 0.9rem;
+  }
+
+  /* Preloader */
+  #preloader {
+    margin: 0;
+    padding: 0;
   }
 }
