@@ -1,0 +1,36 @@
+name: Build and Minify SCSS
+
+on:
+  push:
+    branches: [prod]  # Or your default branch
+  pull_request:
+
+jobs:
+  build-css:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+
+      - name: Install Dart Sass
+        run: |
+          npm install -g sass
+
+      - name: Compile and Minify SCSS
+        run: |
+          sass --style=compressed _sass/main.scss:assets/css/main.min.css
+
+      - name: Commit and push compiled CSS
+        run: |
+          git config user.name "GitHub Actions"
+          git config user.email "actions@github.com"
+          git add assets/css/main.min.css
+          git commit -m "Build CSS: Auto-compiled main.min.css [skip ci]" || echo "No changes"
+          git push
+
