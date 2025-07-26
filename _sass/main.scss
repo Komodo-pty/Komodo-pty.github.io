@@ -1035,6 +1035,8 @@ a {
     justify-content: center;
     margin: 0;
     padding: 1rem;
+    height: auto;
+    min-height: 50vh;
   }
 
   .landing-title {
