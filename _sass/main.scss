@@ -911,9 +911,6 @@ a {
   }
 }
 
-/* Testing Mobile Design */
-
-/* Responsive image styles */
 .responsive-img {
   width: 100%;
   max-width: 100%;
@@ -923,7 +920,14 @@ a {
   border-radius: 1rem; /* Matches neumorphism aesthetic */
 }
 
-/* Optional: Container for images */
+.profile-img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
 .image-container {
   width: 100%;
   max-width: 100%;
