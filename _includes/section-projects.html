@@ -33,12 +33,11 @@
 
 {% if site.show_os_projects %}
   <h1 class="title">{{site.os_projects_title}}</h1>
+  <p class="description">For a summary of functionality, see <a class="highlight-link" href="/toolsuites/tools.html">Toolsuites</a></p>
   {% if site.projects.sort_by == 'stars' %}
 
     {% assign sort_order = 'stargazers_count' %}
-<!-- Fixing Liquid syntax
-    {% assign sort_order = 'stargazers_count', 'last' %}
--->
+
   {% else %}
     {% assign sort_order = 'pushed_at' %}
   {% endif %}
