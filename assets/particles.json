@@ -18,12 +18,12 @@
       },
       "image": [
         {
-          "src": "/assets/img/one.svg",
+          "src": "assets/img/one.svg",
           "width": 24,
           "height": 24
         },
         {
-          "src": "/assets/img/zero.svg",
+          "src": "assets/img/zero.svg",
           "width": 24,
           "height": 24
         }
