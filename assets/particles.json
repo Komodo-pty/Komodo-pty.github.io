@@ -8,17 +8,27 @@
       }
     },
     "color": {
-      "value": ["#dc052d"]
+      "value": ["#12cc00"]
     },
     "shape": {
-      "type": "polygon",
+      "type": "image",
       "stroke": {
         "width": 0,
         "color": "#000000"
       },
-      "polygon": {
-        "nb_sides": 4
-      }
+      "image": [
+        {
+          "src": "/assets/img/one.svg/",
+	  "width": 24,
+	  "height": 24
+        },
+	{
+	  "src": "/assets/img/zero.svg/",
+	  "width": 24,
+	  "height": 24
+
+	}
+      ]
     },
     "opacity": {
       "value": 0.7,
