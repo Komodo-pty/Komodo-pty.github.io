@@ -16,19 +16,11 @@
         "width": 0,
         "color": "#000000"
       },
-      "image": [
-        {
-          "src": "/assets/img/one.svg/",
+      "image": {
+          "src": "/assets/img/binary.svg",
 	  "width": 24,
 	  "height": 24
-        },
-	{
-	  "src": "/assets/img/zero.svg/",
-	  "width": 24,
-	  "height": 24
-
-	}
-      ]
+        }
     },
     "opacity": {
       "value": 0.7,
