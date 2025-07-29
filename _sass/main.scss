@@ -20,7 +20,7 @@ $card-bg-color: linear-gradient(
   rgba(115, 115, 115, 0.15) 15%,
   rgba(43, 45, 47, 1) 80%
 );
-$primary-color: #ff073a;
+$primary-color: #14e200;
 
 /* General */
 
@@ -268,7 +268,7 @@ a {
 .landing-icons {
   display: flex;
   justify-content: center;
-  position: absolute;
+  position: relative;
   z-index: 1;
 
   .social-link {
