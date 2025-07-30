@@ -1,7 +1,7 @@
 {
   "particles": {
     "number": {
-      "value": 30,
+      "value": 50,
       "density": {
         "enable": true,
         "value_area": 800
@@ -19,7 +19,7 @@
       "image": {
           "src": "/assets/img/binary.png",
 	  "width": 24,
-	  "height": 24
+	  "height": 90
         }
     },
     "opacity": {
