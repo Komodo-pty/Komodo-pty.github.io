@@ -23,8 +23,8 @@
   margin: 0;
   padding: 0;
   display: flex;
-  flex-wrap: wrap; /* Allow items to wrap on small screens */
-  gap: 15px; /* Add spacing between items */
+  flex-wrap: nowrap; /* Prevent wrapping of items */
+  gap: 20px; /* Add spacing between items */
 }
 
 /* Style individual list items */
@@ -32,12 +32,23 @@
   margin: 0; /* Remove redundant margin */
 }
 
-/* Style navigation links */
+/* Style navigation links with bold text */
 .custom-fixed-header ul li a {
   text-decoration: none;
   color: #FFFFFF;
-  font-weight: 500;
-  font-size: 1rem; /* Slightly smaller for mobile */
+  font-weight: 700; /* Bold font weight */
+  font-size: 1rem; /* Default size for desktop */
+  white-space: nowrap; /* Prevents text from wrapping onto the next line */
+  line-height: 1.5; /* Slightly increase line-height for readability */
+  display: inline-block;
+  transition: all 0.2s ease-in-out; /* Smooth transition for hover effect */
+}
+
+/* Add hover effect for PowerShell-style highlight */
+.custom-fixed-header ul li a:hover {
+  color: #FFFFFF; /* Keep text white on hover */
+  box-shadow: inset 0 -2rem 0 0 #00C8C8; /* Highlight effect */
+  padding: 0.125rem 0.125rem; /* Adds padding for the glow effect */
 }
 
 /* Style the separator */
@@ -59,16 +70,19 @@ main {
   }
 
   .custom-fixed-header ul {
-    flex-direction: row; /* Keep horizontal but allow wrapping */
+    flex-direction: row; /* Keep horizontal but prevent wrapping */
     justify-content: center; /* Center items */
-    gap: 5px; /* Smaller gap for mobile */
+    gap: 10px; /* Reduce gap for mobile */
+    flex-wrap: nowrap; /* Prevent wrapping */
   }
 
   .custom-fixed-header ul li a {
     font-size: 0.9rem; /* Smaller font for mobile */
+    white-space: nowrap; /* Ensure text stays on one line */
   }
 
   .custom-fixed-header ul li:not(:last-child)::after {
     margin-left: 10px; /* Smaller separator spacing */
   }
 }
+
