@@ -23,7 +23,7 @@
   margin: 0;
   padding: 0;
   display: flex;
-  flex-wrap: nowrap; /* Prevent wrapping of items */
+  flex-wrap: wrap;
   gap: 20px; /* Add spacing between items */
 }
 
@@ -38,7 +38,7 @@
   color: #FFFFFF;
   font-weight: 700; /* Bold font weight */
   font-size: 1rem; /* Default size for desktop */
-  white-space: nowrap; /* Prevents text from wrapping onto the next line */
+  white-space: wrap; 
   line-height: 1.5; /* Slightly increase line-height for readability */
   display: inline-block;
   transition: all 0.2s ease-in-out; /* Smooth transition for hover effect */
@@ -70,15 +70,14 @@ main {
   }
 
   .custom-fixed-header ul {
-    flex-direction: row; /* Keep horizontal but prevent wrapping */
+    flex-direction: row; 
     justify-content: center; /* Center items */
-    gap: 10px; /* Reduce gap for mobile */
-    flex-wrap: nowrap; /* Prevent wrapping */
+    gap: 7px; /* Reduce gap for mobile */
+    flex-wrap: wrap;
   }
 
   .custom-fixed-header ul li a {
     font-size: 0.9rem; /* Smaller font for mobile */
-    white-space: nowrap; /* Ensure text stays on one line */
   }
 
   .custom-fixed-header ul li:not(:last-child)::after {
