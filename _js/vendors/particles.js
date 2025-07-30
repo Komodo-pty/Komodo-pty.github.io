@@ -1404,7 +1404,7 @@ var pJS = function(tag_id, params) {
     pJS.fn.retinaInit();
     pJS.fn.canvasInit();
     pJS.fn.canvasSize();
-//    pJS.fn.canvasPaint();
+    pJS.fn.canvasPaint();
     pJS.fn.particlesCreate();
     pJS.fn.vendors.densityAutoParticles();
 
