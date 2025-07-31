@@ -1006,6 +1006,7 @@ a {
   }
 
   /* Timeline Section */
+/* Timeline Section */
   .timeline-wrapper {
     .timeline {
       width: 100%; /* Full width for mobile */
@@ -1024,20 +1025,32 @@ a {
       text-align: left;
 
       .hexagon {
-        left: 0.5rem;
+        left: 0.75rem; /* Center hexagon on timeline line */
         right: auto;
         top: 0.4rem;
+        margin-left: -0.5rem; /* Offset to align with timeline */
       }
 
-      .flag-wrapper,
+      .flag-wrapper {
+        text-align: left;
+        margin-left: 3rem; /* Increased margin to avoid hexagon overlap */
+        display: block; /* Ensure block layout for stacking */
+      }
+
+      .flag {
+        display: inline-block; /* Keep flag inline with text */
+      }
+
       .desc {
         text-align: left;
-        margin-left: 2rem; /* Align content with timeline */
+        margin-left: 3rem; /* Align with flag-wrapper */
+        margin-top: 0.5rem;
       }
 
       .time-wrapper {
         float: none;
         margin-top: 0.5rem;
+        margin-left: 3rem; /* Align with flag-wrapper */
       }
     }
   }
