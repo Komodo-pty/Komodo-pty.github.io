@@ -1011,11 +1011,11 @@ a {
       width: 100%;
       padding: 0 1rem;
       position: relative;
-      overflow: visible; /* Prevent clipping */
+      overflow: visible;
     }
 
     .timeline:before {
-      left: 1.5rem;
+      left: 1.5rem; /* Position of the vertical timeline line */
       margin-left: 0;
       background: linear-gradient(
         to bottom,
@@ -1024,6 +1024,11 @@ a {
         #d5d5d5 92%,
         #f3f3f3 100%
       );
+      width: 0.125rem;
+      height: 100%;
+      content: "";
+      position: absolute;
+      z-index: 0; /* Ensure line is behind hexagon */
     }
 
     .timeline li {
@@ -1040,23 +1045,22 @@ a {
 
       .hexagon {
         position: absolute;
-        left: 1rem; /* Align with timeline line */
-        right: auto;
-        top: 0.6rem; /* Adjust to center vertically with title */
-        margin-left: -0.5rem; /* Center hexagon */
-        z-index: 2; /* Ensure visibility */
-        background: $primary-color;
+        left: 1.5rem; /* Align center with timeline line */
+        margin-left: -0.5rem; /* Center hexagon (half of width) */
+        top: 0.5rem; /* Align vertically with flag */
         width: 1rem;
         height: 0.5rem;
+        background: $primary-color;
+        z-index: 2; /* Above timeline line */
       }
 
       .hexagon:before,
       .hexagon:after {
-        border-left: 0.5rem solid transparent;
-        border-right: 0.5rem solid transparent;
         content: "";
         position: absolute;
         left: 0;
+        border-left: 0.5rem solid transparent;
+        border-right: 0.5rem solid transparent;
       }
 
       .hexagon:before {
@@ -1071,11 +1075,14 @@ a {
 
       .flag-wrapper {
         text-align: left;
-        margin-left: 3.5rem; /* Avoid hexagon overlap */
+        margin-left: 3rem; /* Indent to clear hexagon */
+        margin-top: 0; /* Remove extra top margin */
         display: block;
         position: relative;
         z-index: 1;
-        padding-top: 0.5rem; /* Space for hexagon */
+        [data-aos] {
+          animation: none !important; /* Disable AOS */
+        }
       }
 
       .flag {
@@ -1083,28 +1090,14 @@ a {
         background: $bg-color;
         border-radius: 0.5rem;
         padding: 0.5rem 0.75rem;
-        [data-aos] {
-          animation: none !important; /* Disable AOS */
-        }
-      }
-
-      .desc {
-        text-align: left;
-        margin-left: 3.5rem;
-        margin-top: 0.75rem;
-        background: $bg-color;
-        border-radius: 1rem;
-        padding: 0.75rem;
-        [data-aos] {
-          animation: none !important; /* Disable AOS */
-        }
       }
 
       .time-wrapper {
-        float: none;
-        margin-left: 3.5rem;
-        margin-top: 0.5rem;
+        text-align: left;
+        margin-left: 3rem; /* Align with flag-wrapper */
+        margin-top: 0.5rem; /* Consistent vertical spacing */
         display: block;
+        z-index: 1;
         [data-aos] {
           animation: none !important; /* Disable AOS */
         }
@@ -1115,6 +1108,19 @@ a {
         border-radius: 0.5rem;
         padding: 0.6rem;
         display: inline-block;
+      }
+
+      .desc {
+        text-align: left;
+        margin-left: 3rem; /* Align with flag-wrapper */
+        margin-top: 0.5rem; /* Consistent vertical spacing */
+        background: $bg-color;
+        border-radius: 1rem;
+        padding: 0.75rem;
+        z-index: 1;
+        [data-aos] {
+          animation: none !important; /* Disable AOS */
+        }
       }
     }
   }
