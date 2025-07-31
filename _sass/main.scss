@@ -1006,51 +1006,115 @@ a {
   }
 
   /* Timeline Section */
-/* Timeline Section */
   .timeline-wrapper {
     .timeline {
-      width: 100%; /* Full width for mobile */
-      padding: 0 0.5rem;
+      width: 100%;
+      padding: 0 1rem;
+      position: relative;
+      overflow: visible; /* Prevent clipping */
     }
 
     .timeline:before {
-      left: 1rem; /* Move timeline to left for single-column layout */
+      left: 1.5rem;
       margin-left: 0;
+      background: linear-gradient(
+        to bottom,
+        #f3f3f3 0%,
+        #d5d5d5 8%,
+        #d5d5d5 92%,
+        #f3f3f3 100%
+      );
+    }
+
+    .timeline li {
+      position: relative;
+      padding: 1.5rem 0;
     }
 
     .direction-l,
     .direction-r {
       float: none;
-      width: 100%; /* Stack timeline items */
+      width: 100%;
       text-align: left;
+      position: relative;
 
       .hexagon {
-        left: 0.75rem; /* Center hexagon on timeline line */
+        position: absolute;
+        left: 1rem; /* Align with timeline line */
         right: auto;
-        top: 0.4rem;
-        margin-left: -0.5rem; /* Offset to align with timeline */
+        top: 0.6rem; /* Adjust to center vertically with title */
+        margin-left: -0.5rem; /* Center hexagon */
+        z-index: 2; /* Ensure visibility */
+        background: $primary-color;
+        width: 1rem;
+        height: 0.5rem;
+      }
+
+      .hexagon:before,
+      .hexagon:after {
+        border-left: 0.5rem solid transparent;
+        border-right: 0.5rem solid transparent;
+        content: "";
+        position: absolute;
+        left: 0;
+      }
+
+      .hexagon:before {
+        border-bottom: 0.25rem solid $primary-color;
+        top: -0.25rem;
+      }
+
+      .hexagon:after {
+        border-top: 0.25rem solid $primary-color;
+        bottom: -0.25rem;
       }
 
       .flag-wrapper {
         text-align: left;
-        margin-left: 3rem; /* Increased margin to avoid hexagon overlap */
-        display: block; /* Ensure block layout for stacking */
+        margin-left: 3.5rem; /* Avoid hexagon overlap */
+        display: block;
+        position: relative;
+        z-index: 1;
+        padding-top: 0.5rem; /* Space for hexagon */
       }
 
       .flag {
-        display: inline-block; /* Keep flag inline with text */
+        display: inline-block;
+        background: $bg-color;
+        border-radius: 0.5rem;
+        padding: 0.5rem 0.75rem;
+        [data-aos] {
+          animation: none !important; /* Disable AOS */
+        }
       }
 
       .desc {
         text-align: left;
-        margin-left: 3rem; /* Align with flag-wrapper */
-        margin-top: 0.5rem;
+        margin-left: 3.5rem;
+        margin-top: 0.75rem;
+        background: $bg-color;
+        border-radius: 1rem;
+        padding: 0.75rem;
+        [data-aos] {
+          animation: none !important; /* Disable AOS */
+        }
       }
 
       .time-wrapper {
         float: none;
+        margin-left: 3.5rem;
         margin-top: 0.5rem;
-        margin-left: 3rem; /* Align with flag-wrapper */
+        display: block;
+        [data-aos] {
+          animation: none !important; /* Disable AOS */
+        }
+      }
+
+      .time {
+        background: $bg-color;
+        border-radius: 0.5rem;
+        padding: 0.6rem;
+        display: inline-block;
       }
     }
   }
