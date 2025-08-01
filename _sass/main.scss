@@ -1068,7 +1068,7 @@ a {
         background: $primary-color;
         z-index: 2;
         margin: 0 !important; /* Force override of auto margins */
-        transform: none; /* Prevent any transforms */
+        transform: translateX(-50%); /* Force it to the left*/
         /* Temporary border for debugging */
         /* border: 1px solid blue; */
       }
