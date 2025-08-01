@@ -17,9 +17,11 @@
 #     - tag: Rails
 #   timeline-side: right
 
-- title: In Progress
+- title: OSCP
   subtitle: I am currently working on obtaining the OSCP.
   timeline-side: left
+  tags:
+    - tag: In progress
 
 - title: OffSec Wireless Professional (OSWP) 
   title-url: https://www.credential.net/aff765df-b328-4c4a-a0a2-046f9a969820#acc.SGNQniDs
