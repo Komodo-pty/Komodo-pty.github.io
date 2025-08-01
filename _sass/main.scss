@@ -976,16 +976,23 @@ a {
     margin: 1rem 0;
     padding: 1rem;
     border-radius: 1rem;
+    box-sizing: border-box;
   }
 
   /* Responsive Images */
   .responsive-img {
     width: 100%; /* Forces images to fill container width */
     max-height: 50vh; /* Limits height to avoid excessive vertical space */
+    max-width: 100%;
+    object-fit: contain;
+    border-radius: 1rem;
   }
 
   .image-container {
-    padding: 0.5rem;
+    padding: 0.25rem;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
   }
 
   /* Skills Section */
@@ -1004,15 +1011,18 @@ a {
       margin: 0.5rem auto;
     }
   }
-/* Timeline Section */
+
+  /* Timeline Section */
   .timeline-wrapper {
+    text-align: left; /* Ensure no inherited centering affects children */
     .timeline {
       width: 100%;
       padding: 0 1rem;
       position: relative;
       overflow: visible;
+      text-align: left; /* Override any centering */
     }
-  
+
     .timeline:before {
       left: 1.5rem; /* Position of the vertical timeline line */
       margin-left: 0;
@@ -1029,19 +1039,19 @@ a {
       position: absolute;
       z-index: 0; /* Ensure line is behind hexagon */
     }
-  
+
     .timeline li {
       position: relative;
       padding: 1.5rem 0;
     }
-  
+
     .direction-l,
     .direction-r {
       float: none;
       width: 100%;
       text-align: left;
       position: relative;
-  
+
       .hexagon {
         position: absolute;
         left: 1rem; /* Center on timeline line at 1.5rem (1.5rem - 0.5rem for 1rem width) */
@@ -1050,8 +1060,9 @@ a {
         height: 0.5rem;
         background: $primary-color;
         z-index: 2; /* Above timeline line */
+        margin: 0; /* Override any auto margins */
       }
-  
+
       .hexagon:before,
       .hexagon:after {
         content: "";
@@ -1060,20 +1071,20 @@ a {
         border-left: 0.5rem solid transparent;
         border-right: 0.5rem solid transparent;
       }
-  
+
       .hexagon:before {
         border-bottom: 0.25rem solid $primary-color;
         top: -0.25rem;
       }
-  
+
       .hexagon:after {
         border-top: 0.25rem solid $primary-color;
         bottom: -0.25rem;
       }
-  
+
       .flag-wrapper {
         text-align: left;
-        margin-left: 2.5rem; /* Reduced to clear hexagon while staying close to timeline */
+        margin-left: 2.5rem; /* Clear hexagon */
         margin-top: 0; /* Remove extra top margin */
         display: block;
         position: relative;
@@ -1082,14 +1093,14 @@ a {
           animation: none !important; /* Disable AOS */
         }
       }
-  
+
       .flag {
         display: inline-block;
         background: $bg-color;
         border-radius: 0.5rem;
         padding: 0.5rem 0.75rem;
       }
-  
+
       .time-wrapper {
         text-align: left;
         margin-left: 2.5rem; /* Align with flag-wrapper */
@@ -1100,14 +1111,14 @@ a {
           animation: none !important; /* Disable AOS */
         }
       }
-  
+
       .time {
         background: $bg-color;
         border-radius: 0.5rem;
         padding: 0.6rem;
         display: inline-block;
       }
-  
+
       .desc {
         text-align: left;
         margin-left: 2.5rem; /* Align with flag-wrapper */
@@ -1122,13 +1133,39 @@ a {
       }
     }
   }
+
   /* Projects Section */
   .projects-wrapper {
     flex-direction: column; /* Stack projects vertically */
+    width: 100%; /* Ensure full width */
+    margin: 0; /* Remove any extra margins */
     > * {
       width: 100%; /* Full width for project cards */
-      margin: 0.5rem 0;
+      margin: 0.5rem 0; /* Consistent vertical spacing */
+      box-sizing: border-box; /* Include padding/borders in width */
     }
+  }
+
+  .project.neumorphism-card {
+    padding: 0.5rem; /* Reduce padding to fit within parent */
+    margin: 0.5rem 0; /* Consistent margin */
+    box-sizing: border-box; /* Ensure padding/borders don’t cause overflow */
+    overflow: hidden; /* Clip any overflowing shadows */
+  }
+
+  .image-container {
+    padding: 0.25rem; /* Reduce padding to minimize space */
+    width: 100%;
+    max-width: 100%; /* Ensure it doesn’t exceed parent */
+    box-sizing: border-box;
+  }
+
+  .responsive-img {
+    width: 100%;
+    max-height: 50vh; /* Maintain height limit */
+    max-width: 100%; /* Ensure image doesn’t exceed container */
+    object-fit: contain;
+    border-radius: 1rem;
   }
 
   /* Landing Page */
