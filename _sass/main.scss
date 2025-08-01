@@ -1014,17 +1014,19 @@ a {
 
   /* Timeline Section */
   .timeline-wrapper {
-    text-align: left; /* Ensure no inherited centering affects children */
+    text-align: left; /* Prevent inherited centering */
+    position: relative; /* Ensure consistent positioning context */
     .timeline {
       width: 100%;
-      padding: 0 1rem;
+      padding: 0; /* Remove padding to avoid shifting */
+      margin: 0; /* Ensure no auto margins */
       position: relative;
+      text-align: left;
       overflow: visible;
-      text-align: left; /* Override any centering */
     }
-
+  
     .timeline:before {
-      left: 1.5rem; /* Position of the vertical timeline line */
+      left: 1.5rem; /* Vertical timeline line position */
       margin-left: 0;
       background: linear-gradient(
         to bottom,
@@ -1037,32 +1039,40 @@ a {
       height: 100%;
       content: "";
       position: absolute;
-      z-index: 0; /* Ensure line is behind hexagon */
+      z-index: 0;
+      /* Temporary border for debugging */
+      /* border: 1px solid red; */
     }
-
+  
     .timeline li {
       position: relative;
       padding: 1.5rem 0;
     }
-
+  
     .direction-l,
     .direction-r {
       float: none;
       width: 100%;
       text-align: left;
       position: relative;
-
+      padding-left: 0; /* Ensure no padding shifts content */
+      margin: 0; /* Prevent auto margins */
+      box-sizing: border-box;
+  
       .hexagon {
         position: absolute;
-        left: 1rem; /* Center on timeline line at 1.5rem (1.5rem - 0.5rem for 1rem width) */
-        top: 0.5rem; /* Align vertically with flag */
+        left: 1rem; /* Center on timeline line (1.5rem - 0.5rem for 1rem width) */
+        top: 0.5rem; /* Align with flag */
         width: 1rem;
         height: 0.5rem;
         background: $primary-color;
-        z-index: 2; /* Above timeline line */
-        margin: 0; /* Override any auto margins */
+        z-index: 2;
+        margin: 0 !important; /* Force override of auto margins */
+        transform: none; /* Prevent any transforms */
+        /* Temporary border for debugging */
+        /* border: 1px solid blue; */
       }
-
+  
       .hexagon:before,
       .hexagon:after {
         content: "";
@@ -1071,21 +1081,21 @@ a {
         border-left: 0.5rem solid transparent;
         border-right: 0.5rem solid transparent;
       }
-
+  
       .hexagon:before {
         border-bottom: 0.25rem solid $primary-color;
         top: -0.25rem;
       }
-
+  
       .hexagon:after {
         border-top: 0.25rem solid $primary-color;
         bottom: -0.25rem;
       }
-
+  
       .flag-wrapper {
         text-align: left;
         margin-left: 2.5rem; /* Clear hexagon */
-        margin-top: 0; /* Remove extra top margin */
+        margin-top: 0;
         display: block;
         position: relative;
         z-index: 1;
@@ -1093,36 +1103,36 @@ a {
           animation: none !important; /* Disable AOS */
         }
       }
-
+  
       .flag {
         display: inline-block;
         background: $bg-color;
         border-radius: 0.5rem;
         padding: 0.5rem 0.75rem;
       }
-
+  
       .time-wrapper {
         text-align: left;
         margin-left: 2.5rem; /* Align with flag-wrapper */
-        margin-top: 0.5rem; /* Consistent vertical spacing */
+        margin-top: 0.5rem;
         display: block;
         z-index: 1;
         [data-aos] {
           animation: none !important; /* Disable AOS */
         }
       }
-
+  
       .time {
         background: $bg-color;
         border-radius: 0.5rem;
         padding: 0.6rem;
         display: inline-block;
       }
-
+  
       .desc {
         text-align: left;
         margin-left: 2.5rem; /* Align with flag-wrapper */
-        margin-top: 0.5rem; /* Consistent vertical spacing */
+        margin-top: 0.5rem;
         background: $bg-color;
         border-radius: 1rem;
         padding: 0.75rem;
@@ -1133,7 +1143,6 @@ a {
       }
     }
   }
-
   /* Projects Section */
   .projects-wrapper {
     flex-direction: column; /* Stack projects vertically */
