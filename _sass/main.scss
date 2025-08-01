@@ -1004,8 +1004,7 @@ a {
       margin: 0.5rem auto;
     }
   }
-
-  /* Timeline Section */
+/* Timeline Section */
   .timeline-wrapper {
     .timeline {
       width: 100%;
@@ -1013,7 +1012,7 @@ a {
       position: relative;
       overflow: visible;
     }
-
+  
     .timeline:before {
       left: 1.5rem; /* Position of the vertical timeline line */
       margin-left: 0;
@@ -1030,19 +1029,19 @@ a {
       position: absolute;
       z-index: 0; /* Ensure line is behind hexagon */
     }
-
+  
     .timeline li {
       position: relative;
       padding: 1.5rem 0;
     }
-
+  
     .direction-l,
     .direction-r {
       float: none;
       width: 100%;
       text-align: left;
       position: relative;
-
+  
       .hexagon {
         position: absolute;
         left: 1rem; /* Center on timeline line at 1.5rem (1.5rem - 0.5rem for 1rem width) */
@@ -1052,7 +1051,7 @@ a {
         background: $primary-color;
         z-index: 2; /* Above timeline line */
       }
-
+  
       .hexagon:before,
       .hexagon:after {
         content: "";
@@ -1061,20 +1060,20 @@ a {
         border-left: 0.5rem solid transparent;
         border-right: 0.5rem solid transparent;
       }
-
+  
       .hexagon:before {
         border-bottom: 0.25rem solid $primary-color;
         top: -0.25rem;
       }
-
+  
       .hexagon:after {
         border-top: 0.25rem solid $primary-color;
         bottom: -0.25rem;
       }
-
+  
       .flag-wrapper {
         text-align: left;
-        margin-left: 3rem; /* Indent to clear hexagon */
+        margin-left: 2.5rem; /* Reduced to clear hexagon while staying close to timeline */
         margin-top: 0; /* Remove extra top margin */
         display: block;
         position: relative;
@@ -1083,17 +1082,17 @@ a {
           animation: none !important; /* Disable AOS */
         }
       }
-
+  
       .flag {
         display: inline-block;
         background: $bg-color;
         border-radius: 0.5rem;
         padding: 0.5rem 0.75rem;
       }
-
+  
       .time-wrapper {
         text-align: left;
-        margin-left: 3rem; /* Align with flag-wrapper */
+        margin-left: 2.5rem; /* Align with flag-wrapper */
         margin-top: 0.5rem; /* Consistent vertical spacing */
         display: block;
         z-index: 1;
@@ -1101,17 +1100,17 @@ a {
           animation: none !important; /* Disable AOS */
         }
       }
-
+  
       .time {
         background: $bg-color;
         border-radius: 0.5rem;
         padding: 0.6rem;
         display: inline-block;
       }
-
+  
       .desc {
         text-align: left;
-        margin-left: 3rem; /* Align with flag-wrapper */
+        margin-left: 2.5rem; /* Align with flag-wrapper */
         margin-top: 0.5rem; /* Consistent vertical spacing */
         background: $bg-color;
         border-radius: 1rem;
