@@ -1068,19 +1068,11 @@ a {
         background: $primary-color;
         z-index: 2;
         margin: 0 !important; /* Force override of auto margins */
-        transform: translateX(-250%); /* Force it to the left*/
+        transform: translateX(-245%); /* Force it to the left*/
         /* Temporary border for debugging */
         /* border: 1px solid blue; */
       }
-  
-      .hexagon:before,
-      .hexagon:after {
-        content: "";
-        position: absolute;
-        left: 0;
-        border-left: 0.5rem solid transparent;
-        border-right: 0.5rem solid transparent;
-      }
+ 
   
       .hexagon:before {
         border-bottom: 0.25rem solid $primary-color;
