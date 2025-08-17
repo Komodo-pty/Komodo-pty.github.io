@@ -2,7 +2,7 @@
   <section class="card neumorphism-card-big">
     <h1 class="title">Argus Recon</h1>
         <p class="description">
-	  <a class="highlight-link" href="https://github.com/Komodo-pty/argus-recon" target="_blank" rel="noopener noreferrer">Argus</a> is designed to automate basic enumeration for a variety of services.
+	  <a class="highlight-link" href="https://github.com/Komodo-pty/argus-recon" target="_blank" rel="noopener noreferrer">Argus</a> automatically enumerates a variety of services.
 	</p>
       <div class="card neumorphism-card">
         <h2 class="subtitle">Functionality</h2>
@@ -18,9 +18,26 @@
   </section>
 
   <section class="card neumorphism-card-big">
+        <h1 class="title">Ares Attack</h1>
+          <p class="description">
+	    <a class="highlight-link" href="https://github.com/Komodo-pty/ares-attack" target="_blank" rel="noopener noreferrer">Ares</a> executes simple attacks, or sets up attacks for you.
+	  </p>
+          <h2 class="subtitle">Functionality</h2>
+  	    <p class="description">There are modules for:</p>
+	    <ul class="description">
+              <li>Buffer Overflow (Generate binary payload using specified address &amp; offset)</li>
+              <li>XSS (Generates payload, runs server for cookie exfil, &amp; redirect users)</li>
+	      <li>Active Directory attacks (ASREP Roasting &amp; Kerberoasting)</li>
+	      <li>Wordlist Mutation (Optionally convert entries to alternate format, like B64)</li> 
+              <li>File Uploads (Bypass common defenses)</li>
+	      <li>Bruteforcing MSSQL in an AD environment</li>
+	    </ul>
+  </section>
+
+  <section class="card neumorphism-card-big">
     <h1 class="title">Artemis Hunter</h1>
       <p class="description">
-        <a class="highlight-link" href="https://github.com/Komodo-pty/artemis-hunter" target="_blank" rel="noopener noreferrer">Artemis</a> will generate reverse shell payloads in various languages, and provides commands to stabilize those shells. Artemis also can generate commands for lateral movement in an Active Directory environment.
+        <a class="highlight-link" href="https://github.com/Komodo-pty/artemis-hunter" target="_blank" rel="noopener noreferrer">Artemis</a> generates payloads in various languages, &amp; outputs commands for lateral movement in an Active Directory environment.
       </p>
       <div class="card neumorphism-card">
         <h2 class="subtitle">Functionality</h2>
@@ -49,32 +66,17 @@
   <section class="card neumorphism-card-big">
         <h1 class="title">Hades PrivEsc</h1>
           <p class="description">
-	    <a class="highlight-link" href="https://github.com/Komodo-pty/hades-PrivEsc" target="_blank" rel="noopener noreferrer">Hades</a> performs Post Exploitation recon for Windows machines. It can be run on a standalone machine, or on a domain-joined machine to scan the Active Directory environment. Hades and Charon are complimentary PowerShell scripts which are designed to work even if your shell is using a non-interactive protocol (e.g. WinRM).
+	    <a class="highlight-link" href="https://github.com/Komodo-pty/hades-PrivEsc" target="_blank" rel="noopener noreferrer">Hades</a> performs Post Exploitation recon for standalone or domain-joined Windows machines. Hades &amp; Charon are complementary PowerShell scripts which are designed to function over non-interactive protocols (e.g., WinRM).
 	  </p>
 
           <div class="card neumorphism-card">
   	    <h2 class="subtitle">Functionality</h2>
 	        <h3 style="text-decoration: underline;">Hades</h3>
-	          <p class="description">The main Hades script enumerates searches a Windows machine for a variety of PrivEsc vectors and sensitive files. It also collects system information, including: routing information, installed Hotfixes, additional drives, etc.</p>
+	          <p class="description">The main Hades script identifies PrivEsc vectors &amp; sensitive files. It also collects system information, such as: routing information, Hotfixes, additional drives, etc.</p>
 
 	        <h3 style="text-decoration: underline;">Charon</h3>
 	          <p class="description">Charon is a supplemental program for domain-joined machines. It unravels nested groups using LDAP queries, identifies all other computers in the domain, etc.</p>
 	  </div>
   </section>
 
-  <section class="card neumorphism-card-big">
-        <h1 class="title">Ares Attack</h1>
-          <p class="description">
-	    <a class="highlight-link" href="https://github.com/Komodo-pty/ares-attack" target="_blank" rel="noopener noreferrer">Ares</a> can be used to execute simple attacks, or to setup attacks for you.
-	  </p>
-          <h2 class="subtitle">Functionality</h2>
-  	    <p class="description">There are modules for:</p>
-	    <ul class="description">
-              <li>XSS (Stealing Cookies)</li>
-	      <li>Active Directory Roasting</li>
-	      <li>Mutating a wordlist</li>
-	      <li>Buffer Overflow (Generating a binary payload file)</li>
-	      <li>Bruteforcing MSSQL in an AD environment</li>
-	    </ul>
-  </section>
 </div>

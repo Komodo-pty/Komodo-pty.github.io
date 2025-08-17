@@ -106,6 +106,7 @@ projects:
      - "SweetPotato"
      - "Powershell_RevShell"
      - "Pentest_CheatSheet"
+     - "file_uploader"
 
 # GOOGLE-ANALYTICS
 # Set the id, if you want to track your website with Google Analytics
