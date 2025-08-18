@@ -32,18 +32,13 @@
       <hr />
     </div> 
   </div>
-  <!-- Adding <main> tag to apply the padding-top from custom.css-->
     {% unless page.no_header %}
       {% include header.html %}
     {% endunless %}
-
   <main>
 
   <div class="layout">
-
     {% include {{ page.section | default: 'default' }}.html %}
-
-      <!-- Include Contact on each page? -->
 
     {%if site.show_contact_card %}
     <section class="card neumorphism-card-big">
