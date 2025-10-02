@@ -14,7 +14,7 @@
 #     - tag: Node
 
 - name: Freelance Pentesting
-  descr: "I conducted web application penetration testing for an independent law firm, identifying vulnerabilities and recommending mitigation strategies. My pentest <a class='highlight-link' href='/assets/redacted_Pentest_Report.pdf'>report</a> and a letter of recommendation are available upon request."
+  descr: "I conducted web application penetration testing for an independent law firm, identifying vulnerabilities and recommending mitigation strategies. My <a class='highlight-link' href='/assets/redacted_Pentest_Report.pdf' target='_blank' rel='noopener noreferrer'>pentest report</a> and a letter of recommendation are available upon request."
     #  demo: /assets/redacted_Pentest_Report.pdf
 
 
