@@ -14,7 +14,7 @@
 #     - tag: Node
 
 - name: Freelance Pentesting
-  descr: "I performed penetration testing for an independent law firm, identifying vulnerabilities and recommending mitigation strategies. A redacted <a class='highlight-link' href='/assets/redacted_Pentest_Report.pdf'>report</a> and letter of recommendation is available upon request."
+  descr: "I conducted web application penetration testing for an independent law firm, identifying vulnerabilities and recommending mitigation strategies. My pentest <a class='highlight-link' href='/assets/redacted_Pentest_Report.pdf'>report</a> and a letter of recommendation are available upon request."
     #  demo: /assets/redacted_Pentest_Report.pdf
 
 
@@ -26,16 +26,16 @@
     - tag: January 2025
 
 
-- name: Homelab
-  descr: "I built and maintained a hybrid homelab using physical hardware, Xen-based virtual machines, and AWS cloud servers to gain hands-on experience in system administration, network configuration, and cybersecurity practices.<br><br>
+- name: Home Lab
+  descr: "I built and maintained a hybrid homelab using physical hardware, Xen virtual machines, and AWS to gain hands-on experience in system administration, network configuration, and cybersecurity practices.<br><br>
     Key projects and skills practiced include:
       <ul>
-        <li>Managing firewalls and configuring routing tables</li>
-        <li>Pivoting with Port Forwarding, Proxying, and Tunneling</li>
-        <li>Establishing Persistence and using C2 Frameworks</li>
-        <li>Sniffing network traffic, and analyzing PCAPs</li>
-        <li>Creating a Rogue AP for MitM and Captive Portal attacks</li>
-        <li>Attacking WPS and WPA (Personal / Enterprise) encryption</li>
-        <li>Evading Antivirus’ static and dynamic detection</li>
-        <li>Hosting and attacking various Web Servers</li>
+        <li>Configured firewalls and routing to secure networks</li>
+        <li>Applied port forwarding and tunneling for pivoting</li>
+        <li>Tested persistence mechanisms and C2 frameworks</li>
+        <li>Analyzed PCAPs with Wireshark to detect anomalous traffic</li>
+        <li>Simulated rogue AP for MitM and captive portal tests</li>
+        <li>Captured WPA handshakes and tested offline cracking techniques</li>
+        <li>Studied antivirus evasion in isolated environments</li>
+        <li>Deployed web servers to learn about secure configurations</li>
       </ul>"
