@@ -1,0 +1,14 @@
+Append the following line to index.html right above the </body> to setup a landing page based off of homepage.html
+
+<div class='page-panel'><iframe src='homepage.html' id='page_frame'></iframe></div></div><script src='res/script3.js'></script>
+
+
+_____________________________________________
+homepage.html loads in _includes/research.html
+
+---
+layout: generic
+section: research
+no_header: true
+---
+
