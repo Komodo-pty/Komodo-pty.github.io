@@ -17,16 +17,15 @@
   descr: "Conducted web application penetration testing for an independent law firm, identifying vulnerabilities and recommending mitigation strategies.<br><br>My <a class='highlight-link' href='/assets/redacted_Pentest_Report.pdf' target='_blank' rel='noopener noreferrer'>pentest report</a> and a letter of recommendation are available upon request."
     #  demo: /assets/redacted_Pentest_Report.pdf
 
-- name: National Cyber League (Hackathon)
-  descr: "Competed in the NCL (individual and team divisions).<br>Set school records for highest scores.<br><br>Individual: Placed 696/6,976 (top 10%). Scored 2070/3000.<br><br>Team: Placed 203/3,638 (top 6%). Team score 2485/3000."
-  tags:
-    - tag: April 2026
-
 - name: Operation 418 (Hackathon)
   descr: "Earned first place in the Expert Division of the Operation 418 hacking competition, hosted by Virginia Tech and The Bulls Run Group.<br><br>During the event, I compromised 16 machines across multiple networks and exfiltrated sensitive data, including financial reports and customer information."
   tags:
     - tag: January 2025
 
+- name: National Cyber League (Hackathon)
+  descr: "Competed in the NCL (individual and team divisions).<br><br>Set school records for highest scores.<br><br>Individual: Placed 696/6,976 (top 10%). Scored 2070/3000.<br><br>Team: Placed 203/3,638 (top 6%). Team score 2485/3000."
+  tags:
+    - tag: April 2026
 
 - name: Home Lab
   descr: "Built a hybrid environment using physical hardware, Xen virtual machines, and AWS to gain hands-on experience in system administration, network configuration, and cybersecurity practices.<br><br>

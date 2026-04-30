@@ -20,6 +20,12 @@
 	    </div>
 	  {% endif %}
 
+          {% if project.name == "Freelance Pentesting" %}
+            <div class="image-container">
+	      <img class="responsive-img" src="/assets/img/preview_Pentest_Report.png" alt="Pentest Report Preview">
+	    </div>
+	  {% endif %}
+
         <p class="project-desc">{{project.descr}}</p>
         {% if project.demo %}
           <a class="highlight-link" href="{{project.demo}}" target="_blank" rel="noreferrer">
