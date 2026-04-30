@@ -7,9 +7,16 @@
           <h3>{{project.name}}</h3>
         </div>
 
-          {% if project.name == "Hackathon" %}
+          {% if project.name == "Operation 418 (Hackathon)" %}
             <div class="image-container">
 	      <img class="responsive-img" src="/assets/img/hackathon_418.jpg" alt="1st Place Award">
+	    </div>
+	  {% endif %}
+
+	  {% if project.name == "National Cyber League (Hackathon)" %}
+            <div class="image-container">
+	      <img class="responsive-img" src="/assets/img/ncl_individual_Game_CyberSkyline_2026.png" alt="Individual Game">
+              <img class="responsive-img" src="/assets/img/ncl_team_game_2026.png" alt="Team Game">
 	    </div>
 	  {% endif %}
 
