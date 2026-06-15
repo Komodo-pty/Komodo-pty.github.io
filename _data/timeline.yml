@@ -20,8 +20,16 @@
 - title: OSCP
   subtitle: I am currently working on obtaining the OSCP.
   date: In progress
-  timeline-side: left
+  timeline-side: right
 
+- title: Comptia Network+
+  title-url: https://www.credly.com/badges/61a734f3-3a57-44d5-83c0-1264906d681f/linked_in_profile
+  date: June 2026
+  tags:
+    - tag: Network Administration 
+    - tag: Cloud Infrastructure
+    - tag: Virtualization
+  timeline-side: left
 
 - title: OffSec Wireless Professional (OSWP) 
   title-url: https://www.credential.net/aff765df-b328-4c4a-a0a2-046f9a969820#acc.SGNQniDs
@@ -44,8 +52,8 @@
   timeline-side: left
 
 - title: Palomar College 
-  date: August 2017 - May 2018
-  subtitle: 2 semesters
+  date: August 2017 - May 2018, January 2026 - Present
+  subtitle: 3 semesters
   tags:
     - tag: 4.0 GPA
   timeline-side: right
