@@ -26,6 +26,12 @@
 	    </div>
 	  {% endif %}
 
+          {% if project.name == "Cyber Quests (USCC)" %}
+	    <div class="image-container">
+              <img class="responsive-img" src="/assets/img/cyber_quest_invite_preview.png" alt="USCC Camp Invitation">
+	    </div>
+	  {% endif %}
+
         <p class="project-desc">{{project.descr}}</p>
         {% if project.demo %}
           <a class="highlight-link" href="{{project.demo}}" target="_blank" rel="noreferrer">
