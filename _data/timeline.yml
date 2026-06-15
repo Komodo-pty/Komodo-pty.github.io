@@ -23,7 +23,7 @@
   timeline-side: right
 
 - title: Comptia Network+
-  title-url: https://www.credly.com/badges/61a734f3-3a57-44d5-83c0-1264906d681f/linked_in_profile
+  title-url: https://www.credly.com/users/nathan-miller.15fb8c40/badges/credly 
   date: June 2026
   tags:
     - tag: Network Administration 
@@ -34,7 +34,7 @@
 - title: OffSec Wireless Professional (OSWP) 
   title-url: https://www.credential.net/aff765df-b328-4c4a-a0a2-046f9a969820#acc.SGNQniDs
   date: June 2024
-  subtitle: The PEN-210 (OSWP) exam required me to compromise various networks and exfiltrate sensitive files located within them (i.e. the "flags").
+  subtitle: The PEN-210 (OSWP) exam required me to compromise various networks and exfiltrate sensitive files located within them (i.e., the "flags").
   tags:
     - tag: Networking Fundementals
     - tag: WiFi Security
@@ -52,7 +52,7 @@
   timeline-side: left
 
 - title: Palomar College 
-  date: August 2017 - May 2018, January 2026 - Present
+  date: Aug 2017 - May 2018, Jan 2026 - Present
   subtitle: 3 semesters
   tags:
     - tag: 4.0 GPA
@@ -60,7 +60,7 @@
 
 - title: Biomedical Technology
   #  title-url: Scan in paper with skills covered
-  date: August 2016 - January 2017
+  date: Aug 2016 - Jan 2017
   subtitle: Career Technical Education (CTE)
   tags:
     - tag: Accredited Occupational Program
