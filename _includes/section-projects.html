@@ -32,6 +32,12 @@
 	    </div>
 	  {% endif %}
 
+	  {% if project.name == "Qualcomm LayerOne (Volunteer)" %}
+	    <div class="image-container">
+              <img class="responsive-img" src="/assets/img/Qualcomm_LayerOne_CTF_2026.png" alt="Qualcomm LayerOne CTF Submission">
+            </div>
+          {% endif %}
+
         <p class="project-desc">{{project.descr}}</p>
         {% if project.demo %}
           <a class="highlight-link" href="{{project.demo}}" target="_blank" rel="noreferrer">

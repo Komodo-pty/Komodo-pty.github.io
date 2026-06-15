@@ -28,9 +28,14 @@
     - tag: April 2026
 
 - name: Cyber Quests (USCC)
-  descr: "Top 10% of 10,000+ participants in the U.S. Cyber Challenge.<br><br>Analyzed PCAPs to identify attacks targeting OT/SCADA environments. Reconstructed malicious activity using packet-level forensics and protocol analysis to identify tactics, exploited protocols, and affected assets."
+  descr: "Top 10% of 10,000+ participants in the U.S. Cyber Challenge.<br><br>Analyzed PCAPs to identify attacks targeting OT/SCADA environments.<br><br>Reconstructed malicious activity using packet-level forensics and protocol analysis to identify tactics, exploited protocols, and affected assets."
   tags:
-    - tag: February 2026 
+    - tag: February 2026
+
+- name: Qualcomm LayerOne (Volunteer)
+  descr: "Created a CTF for the LayerOne Hackathon.<br><br>The challenge is still available on my <a class='highlight-link' href='/assets/img/Qualcomm_LayerOne_CTF_2026.png' target='_blank' rel='noopener noreferrer'>Github, along with a script to check your flag."
+  tags:
+    - tag: May 2026
 
 - name: Home Lab
   descr: "Built a hybrid environment using physical hardware, Xen virtual machines, and AWS to gain hands-on experience in system administration, network configuration, and cybersecurity practices.<br><br>
