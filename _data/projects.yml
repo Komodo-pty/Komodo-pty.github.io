@@ -33,7 +33,7 @@
     - tag: February 2026
 
 - name: Qualcomm LayerOne (Volunteer)
-  descr: "Created a CTF for the LayerOne Hackathon.<br><br>The challenge is still available on my <a class='highlight-link' href='/assets/img/Qualcomm_LayerOne_CTF_2026.png' target='_blank' rel='noopener noreferrer'>Github</a>, along with a script to check your flag."
+  descr: "Created a CTF for the LayerOne Hackathon.<br><br>The <a class='highlight-link' href='https://github.com/Komodo-pty/Translation_Difficulties_CTF' target='_blank' rel='noopener noreferrer'>challenge</a> is available on my Github, along with a script to check your flag."
   tags:
     - tag: May 2026
 
