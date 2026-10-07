@@ -18,17 +18,17 @@
     #  demo: /assets/redacted_Pentest_Report.pdf
 
 - name: Operation 418 (Hackathon)
-  descr: "Earned first place in the Expert Division of the Operation 418 hacking competition, hosted by Virginia Tech and The Bulls Run Group.<br><br>During the event, I compromised 16 machines across multiple networks and exfiltrated sensitive data, including financial reports and customer information."
+  descr: "Earned first place in the Expert Division. Hosted by Virginia Tech and The Bulls Run Group.<br><br>I compromised machines across multiple networks and exfiltrated sensitive data, including proprietary data and customer information. After the event, organizers sought my advice on the development of an intrusion detection system."
   tags:
     - tag: January 2025
 
 - name: National Cyber League (Hackathon)
-  descr: "Competed in the NCL (individual and team divisions).<br><br>Set school records for highest scores.<br><br>Individual: Placed 696/6,976 (top 10%). Scored 2070/3000.<br><br>Team: Placed 203/3,638 (top 6%). Team score 2485/3000."
+  descr: "Competed in the NCL (individual and team divisions).<br><br>Set school record.<br><br>Individual: Placed 696/6,976 (top 10%). Scored 2070/3000.<br><br>Team: Placed 203/3,638 (top 6%). Team score 2485/3000."
   tags:
     - tag: April 2026
 
-- name: Cyber Quests (USCC)
-  descr: "Top 10% of 10,000+ participants in the U.S. Cyber Challenge.<br><br>Analyzed PCAPs to identify attacks targeting OT/SCADA environments.<br><br>Reconstructed malicious activity using packet-level forensics and protocol analysis to identify tactics, exploited protocols, and affected assets."
+- name: U.S. Cyber Challenge (CyberBowl)
+  descr: "My team (Zugzwang) placed third on the West Coast and advanced to the finals.<br><br>Analyzed PCAPs to identify attacks targeting OT/SCADA environments.<br><br>Reconstructed malicious activity using packet-level forensics and protocol analysis to identify tactics, exploited protocols, and affected assets.<br><br>Other challenges included Web Application, Network, and Memory exploitation."
   tags:
     - tag: February 2026
 
@@ -50,3 +50,5 @@
         <li>Studied antivirus evasion in isolated environments</li>
         <li>Deployed web servers to learn about secure configurations</li>
       </ul>"
+    tags:
+      - tag: January 2021
