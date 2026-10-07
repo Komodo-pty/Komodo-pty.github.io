@@ -18,7 +18,7 @@
     #  demo: /assets/redacted_Pentest_Report.pdf
 
 - name: Operation 418 (Hackathon)
-  descr: "Earned first place in the Expert Division. Hosted by Virginia Tech and The Bulls Run Group.<br><br>I compromised machines across multiple networks and exfiltrated sensitive data, including proprietary data and customer information. After the event, organizers sought my advice on the development of an intrusion detection system."
+  descr: "Earned first place in the Expert Division. Hosted by Virginia Tech and The Bulls Run Group.<br><br>I compromised machines across multiple networks and exfiltrated sensitive data, including proprietary data and customer information. Organizers sought my advice on the development of an intrusion detection system."
   tags:
     - tag: January 2025
 
