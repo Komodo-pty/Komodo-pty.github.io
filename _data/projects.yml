@@ -14,7 +14,7 @@
 #     - tag: Node
 
 - name: Freelance Pentesting
-  descr: "Conducted web application penetration testing for an independent law firm, identifying vulnerabilities and recommending mitigation strategies.<br><br>My <a class='highlight-link' href='/assets/redacted_Pentest_Report.pdf' target='_blank' rel='noopener noreferrer'>pentest report</a> and a letter of recommendation are available upon request."
+  descr: "Conducted web application penetration testing for an independent law firm, identifying vulnerabilities and recommending mitigation strategies.<br><br>A redacted <a class='highlight-link' href='/assets/redacted_Pentest_Report.pdf' target='_blank' rel='noopener noreferrer'>pentest report</a> and a letter of recommendation are available upon request."
     #  demo: /assets/redacted_Pentest_Report.pdf
 
 - name: Operation 418 (Hackathon)
@@ -38,17 +38,14 @@
     - tag: May 2026
 
 - name: Home Lab
-  descr: "Built a hybrid environment using physical hardware, Xen virtual machines, and AWS to gain hands-on experience in system administration, network configuration, and cybersecurity practices.<br><br>
-    Key projects and skills practiced include:
+  descr: "Built a hybrid environment using physical hardware, Xen virtual machines, and AWS to gain hands-on experience.<br><br> 
       <ul>
-        <li>Configured firewalls and routing to secure networks</li>
-        <li>Applied port forwarding and tunneling for pivoting</li>
-        <li>Tested persistence mechanisms and C2 frameworks</li>
-        <li>Analyzed PCAPs with Wireshark to detect anomalous traffic</li>
-        <li>Simulated rogue AP for MitM and captive portal tests</li>
-        <li>Captured WPA handshakes and tested offline cracking techniques</li>
-        <li>Studied antivirus evasion in isolated environments</li>
-        <li>Deployed web servers to learn about secure configurations</li>
+        <li>Configured firewalls & routing to secure networks</li>
+        <li>Practiced pivoting using tunnels & port forwarding</li>
+        <li>Performed network attacks & installed C2 clients</li>
+        <li>Analyzed PCAPs & logs to detect anomalous traffic</li>
+        <li>Simulated client side attacks, testing antivirus evasion</li>
+        <li>Captured WPA handshakes to test offline cracking techniques</li>
       </ul>"
   tags:
     - tag: January 2021

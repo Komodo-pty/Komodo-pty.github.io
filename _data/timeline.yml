@@ -34,7 +34,7 @@
 - title: OffSec Wireless Professional (OSWP) 
   title-url: https://www.credential.net/aff765df-b328-4c4a-a0a2-046f9a969820#acc.SGNQniDs
   date: June 2024
-  subtitle: The PEN-210 (OSWP) exam required me to compromise various networks and exfiltrate sensitive files located within them (i.e., the "flags").
+  subtitle: The PEN-210 (OSWP) exam required me to compromise various networks and exfiltrate sensitive files located within them.
   tags:
     - tag: Networking Fundementals
     - tag: WiFi Security
@@ -51,9 +51,9 @@
     - tag: Python
   timeline-side: left
 
-- title: Palomar College 
-  date: 3 semesters
-  subtitle: Aug 2017 - May 2018, Jan 2026 - Present
+- title: Computer Network Administration (A.S.) 
+#  date: Expected graduation 2027
+  subtitle: Palomar college. Expected graduation 2027
   tags:
     - tag: 4.0 GPA
   timeline-side: right
